@@ -1,0 +1,11 @@
+# Cloudflare Pages redirects
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Saubere URLs (ohne .html-Endung)
+/impressum     /impressum.html    200
+/datenschutz   /datenschutz.html  200
+
+# Blog-Subpfad → Ghost auf Subdomain
+# Sobald Ghost-Hostname feststeht, hier eintragen:
+/blog          https://blog.belalkayumi.com  301
+/blog/*        https://blog.belalkayumi.com/:splat  301
