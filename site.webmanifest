@@ -1,0 +1,25 @@
+{
+  "name": "Belal Kayumi — GEO & KI-Sichtbarkeit",
+  "short_name": "Belal Kayumi",
+  "description": "Praktiker für Generative Engine Optimization (GEO) und KI-Sichtbarkeit im DACH-Raum.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FDFCFA",
+  "theme_color": "#1C1917",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
