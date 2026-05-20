@@ -555,9 +555,6 @@
       letter-spacing: 0.02em;
       flex-wrap: wrap;
     }
-    .featured-card__meta-divider {
-      color: var(--border);
-    }
     .featured-card__title {
       font-family: var(--font-heading);
       font-size: 24px;
@@ -672,7 +669,6 @@
       font-weight: 500;
       letter-spacing: 0.02em;
     }
-    .post-card__meta-divider { color: var(--border); }
     .post-card__title {
       font-family: var(--font-heading);
       font-size: 19px;
@@ -1117,7 +1113,7 @@
       const params = new URLSearchParams({
         key: GHOST_KEY,
         limit: String(limit),
-        fields: 'id,title,slug,feature_image,excerpt,custom_excerpt,published_at,reading_time,url',
+        fields: 'id,title,slug,feature_image,excerpt,custom_excerpt,published_at,url',
         include: 'tags,authors',
         order: 'published_at desc',
       });
@@ -1159,8 +1155,6 @@
           <div class="featured-card__body">
             <div class="featured-card__meta">
               <span>${formatDate(post.published_at)}</span>
-              <span class="featured-card__meta-divider">·</span>
-              <span>${post.reading_time || 1} Min Lesezeit</span>
             </div>
             <h3 class="featured-card__title">${escapeHtml(post.title)}</h3>
             ${excerpt ? `<p class="featured-card__excerpt">${escapeHtml(excerpt)}</p>` : ''}
@@ -1188,8 +1182,6 @@
           <div class="post-card__body">
             <div class="post-card__meta">
               <span>${formatDate(post.published_at)}</span>
-              <span class="post-card__meta-divider">·</span>
-              <span>${post.reading_time || 1} Min</span>
             </div>
             <h3 class="post-card__title">${escapeHtml(post.title)}</h3>
             ${excerpt ? `<p class="post-card__excerpt">${escapeHtml(excerpt)}</p>` : ''}
