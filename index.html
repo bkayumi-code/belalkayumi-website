@@ -3098,12 +3098,12 @@
         if (arrow) arrow.style.display = 'none';
 
         try {
-          const response = await fetch('https://blog.belalkayumi.com/members/api/send-magic-link/', {
+          const response = await fetch('https://brevo-doi.b-kayumi.workers.dev/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
               email: email,
-              emailType: 'signup'
+              company: ''
             })
           });
 

@@ -719,6 +719,31 @@
     }
     .posts-state__text { font-size: 14px; max-width: 480px; margin: 0 auto; }
 
+    /* ============================================
+       ÄLTERE BEITRÄGE (Link zum bisherigen Blog)
+       ============================================ */
+    .older-posts {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .older-posts__text { font-size: 14px; color: var(--text-secondary); }
+    .older-posts__link {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.25s var(--ease);
+    }
+    .older-posts__link:hover { gap: 10px; }
+
     .skeleton-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
@@ -957,69 +982,50 @@
       </div>
     </section>
 
-    <!-- FEATURED POSTS -->
-    <section class="section" id="empfehlungen" aria-labelledby="featured-title">
-      <div class="container">
-        <div class="section__head">
-          <span class="section__label reveal">Empfehlungen</span>
-          <h2 class="section__title reveal reveal-delay-1" id="featured-title">Empfohlene Beiträge</h2>
-          <p class="section__subtitle reveal reveal-delay-2">
-            Eine handverlesene Auswahl — die Beiträge, die als Einstieg in das Thema KI-Sichtbarkeit am meisten Wert liefern.
-          </p>
-        </div>
-        <div class="featured__grid" id="featured-grid">
-          <!-- Skeleton während Laden -->
-          <div class="skeleton-card">
-            <div class="skeleton-card__img"></div>
-            <div class="skeleton-card__body">
-              <div class="skeleton-card__line"></div>
-              <div class="skeleton-card__line skeleton-card__line--short"></div>
-            </div>
-          </div>
-          <div class="skeleton-card">
-            <div class="skeleton-card__img"></div>
-            <div class="skeleton-card__body">
-              <div class="skeleton-card__line"></div>
-              <div class="skeleton-card__line skeleton-card__line--short"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- LATEST POSTS -->
+    <!-- ALLE BEITRÄGE (statisch — keine externe API, GEO-clean) -->
     <section class="section section--warm" id="aktuell" aria-labelledby="latest-title">
       <div class="container">
         <div class="section__head">
           <span class="section__label reveal">Aktuell</span>
           <h2 class="section__title reveal reveal-delay-1" id="latest-title">Alle Beiträge</h2>
           <p class="section__subtitle reveal reveal-delay-2">
-            Die neuesten Veröffentlichungen — Beobachtungen, Analysen und Tools rund um GEO und KI-Sichtbarkeit.
+            Beobachtungen, Analysen und Tools rund um GEO und KI-Sichtbarkeit — neue Beiträge erscheinen hier zuerst.
           </p>
         </div>
+
         <div class="posts__grid" id="posts-grid">
-          <!-- Skeleton während Laden -->
-          <div class="skeleton-card">
-            <div class="skeleton-card__img"></div>
-            <div class="skeleton-card__body">
-              <div class="skeleton-card__line"></div>
-              <div class="skeleton-card__line skeleton-card__line--short"></div>
+          <!-- BLOG_POSTS:START — neue Beiträge als <a class="post-card reveal" href="/blog/<slug>"> hier einfügen, neueste zuerst -->
+          <a class="post-card reveal" href="/blog/geo-vs-seo">
+            <div class="post-card__image">
+              <img src="https://images.unsplash.com/photo-1762330470070-249e7c23c8c0?auto=format&fit=crop&w=800&h=450&q=70" alt="Nahaufnahme einer KI-Eingabemaske mit dem Hinweis „Ask anything“" loading="lazy" />
             </div>
-          </div>
-          <div class="skeleton-card">
-            <div class="skeleton-card__img"></div>
-            <div class="skeleton-card__body">
-              <div class="skeleton-card__line"></div>
-              <div class="skeleton-card__line skeleton-card__line--short"></div>
+            <div class="post-card__body">
+              <div class="post-card__meta"><span>21. Mai 2026</span></div>
+              <h3 class="post-card__title">GEO vs. SEO: Unterschied, Überschneidung — und warum SEO allein nicht reicht</h3>
+              <p class="post-card__excerpt">Wo SEO aufhört und GEO anfängt: Sichtbarkeit in den Antworten von ChatGPT, Perplexity und Google AI Overviews — und warum du beides zusammen denken musst.</p>
+              <span class="post-card__readmore">Lesen <span aria-hidden="true">→</span></span>
             </div>
-          </div>
-          <div class="skeleton-card">
-            <div class="skeleton-card__img"></div>
-            <div class="skeleton-card__body">
-              <div class="skeleton-card__line"></div>
-              <div class="skeleton-card__line skeleton-card__line--short"></div>
+          </a>
+          <a class="post-card reveal" href="/blog/was-ist-generative-engine-optimization-geo">
+            <div class="post-card__image">
+              <img src="https://images.unsplash.com/photo-1599413955192-1d5eb8099a9c?auto=format&fit=crop&w=800&h=450&crop=top&q=70" alt="Person im weißen Hemd tippt an einer schwarzen Computertastatur" loading="lazy" />
             </div>
-          </div>
+            <div class="post-card__body">
+              <div class="post-card__meta"><span>21. Mai 2026</span></div>
+              <h3 class="post-card__title">Was ist Generative Engine Optimization (GEO)? Ein praxisnaher Leitfaden für B2B</h3>
+              <p class="post-card__excerpt">Wie KI-Systeme wie ChatGPT, Perplexity und Google AI Overviews dein B2B-Unternehmen als Quelle zitieren — und was du dafür konkret tun musst.</p>
+              <span class="post-card__readmore">Lesen <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+          <!-- BLOG_POSTS:END -->
+        </div>
+
+        <!-- Ältere Beiträge liegen noch im bisherigen Ghost-Blog -->
+        <div class="older-posts reveal">
+          <p class="older-posts__text">Ältere Beiträge findest du vorerst im bisherigen Blog.</p>
+          <a class="older-posts__link" href="https://blog.belalkayumi.com" target="_blank" rel="noopener">
+            Zum bisherigen Blog <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
     </section>
@@ -1100,151 +1106,7 @@
   </footer>
 
   <script>
-    // ============================================
-    // GHOST CONTENT API CONFIG
-    // ============================================
-    const GHOST_URL = 'https://blog.belalkayumi.com';
-    const GHOST_KEY = 'c03951fe2bb1fbe9a661d5a0d0';
-
-    // ============================================
-    // FETCH POSTS FROM GHOST
-    // ============================================
-    async function fetchPosts({ filter = '', limit = 12 } = {}) {
-      const params = new URLSearchParams({
-        key: GHOST_KEY,
-        limit: String(limit),
-        fields: 'id,title,slug,feature_image,excerpt,custom_excerpt,published_at,url',
-        include: 'tags,authors',
-        order: 'published_at desc',
-      });
-      if (filter) params.set('filter', filter);
-
-      const res = await fetch(`${GHOST_URL}/ghost/api/content/posts/?${params.toString()}`);
-      if (!res.ok) throw new Error(`Ghost API ${res.status}`);
-      const { posts } = await res.json();
-      return posts || [];
-    }
-
-    // ============================================
-    // FORMAT HELPERS
-    // ============================================
-    const formatDate = (iso) => new Date(iso).toLocaleDateString('de-DE', {
-      day: 'numeric', month: 'long', year: 'numeric'
-    });
-
-    const escapeHtml = (s = '') => s
-      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
-
-    const initial = (title = '') => (title.trim()[0] || '·').toUpperCase();
-
-    // ============================================
-    // RENDER FEATURED CARDS
-    // ============================================
-    function renderFeaturedCard(post) {
-      const tag = post.primary_tag || (post.tags && post.tags[0]);
-      const tagHtml = tag ? `<span class="featured-card__tag">${escapeHtml(tag.name)}</span>` : '';
-      const image = post.feature_image
-        ? `<img src="${escapeHtml(post.feature_image)}" alt="${escapeHtml(post.title)}" loading="lazy" />`
-        : `<div class="featured-card__image--placeholder">${escapeHtml(initial(post.title))}</div>`;
-      const excerpt = post.custom_excerpt || post.excerpt || '';
-
-      return `
-        <a class="featured-card reveal" href="${escapeHtml(post.url)}">
-          <div class="featured-card__image">${image}</div>
-          <div class="featured-card__body">
-            <div class="featured-card__meta">
-              <span>${formatDate(post.published_at)}</span>
-            </div>
-            <h3 class="featured-card__title">${escapeHtml(post.title)}</h3>
-            ${excerpt ? `<p class="featured-card__excerpt">${escapeHtml(excerpt)}</p>` : ''}
-            <div class="featured-card__footer">
-              ${tagHtml}
-              <span class="featured-card__readmore">Beitrag lesen <span aria-hidden="true">→</span></span>
-            </div>
-          </div>
-        </a>
-      `;
-    }
-
-    // ============================================
-    // RENDER STANDARD POST CARDS
-    // ============================================
-    function renderPostCard(post) {
-      const image = post.feature_image
-        ? `<img src="${escapeHtml(post.feature_image)}" alt="${escapeHtml(post.title)}" loading="lazy" />`
-        : `<div class="post-card__image--placeholder">${escapeHtml(initial(post.title))}</div>`;
-      const excerpt = post.custom_excerpt || post.excerpt || '';
-
-      return `
-        <a class="post-card reveal" href="${escapeHtml(post.url)}">
-          <div class="post-card__image">${image}</div>
-          <div class="post-card__body">
-            <div class="post-card__meta">
-              <span>${formatDate(post.published_at)}</span>
-            </div>
-            <h3 class="post-card__title">${escapeHtml(post.title)}</h3>
-            ${excerpt ? `<p class="post-card__excerpt">${escapeHtml(excerpt)}</p>` : ''}
-            <span class="post-card__readmore">Lesen <span aria-hidden="true">→</span></span>
-          </div>
-        </a>
-      `;
-    }
-
-    // ============================================
-    // STATE HELPERS
-    // ============================================
-    function renderEmpty(container, title, text) {
-      container.innerHTML = `
-        <div class="posts-state" style="grid-column: 1 / -1;">
-          <div class="posts-state__title">${escapeHtml(title)}</div>
-          <div class="posts-state__text">${escapeHtml(text)}</div>
-        </div>
-      `;
-    }
-
-    // ============================================
-    // INITIALIZE
-    // ============================================
-    (async () => {
-      const featuredEl = document.getElementById('featured-grid');
-      const postsEl = document.getElementById('posts-grid');
-
-      // Featured Posts (Ghost: featured = true)
-      try {
-        const featured = await fetchPosts({ filter: 'featured:true', limit: 4 });
-        if (featured.length === 0) {
-          // Fallback: top 2 latest
-          const fallback = await fetchPosts({ limit: 2 });
-          if (fallback.length === 0) {
-            renderEmpty(featuredEl, 'Bald geht es los.', 'Aktuell sind noch keine Beiträge veröffentlicht. Trag dich gerne in den Newsletter ein, um die ersten Beiträge zu bekommen.');
-          } else {
-            featuredEl.innerHTML = fallback.map(renderFeaturedCard).join('');
-          }
-        } else {
-          featuredEl.innerHTML = featured.map(renderFeaturedCard).join('');
-        }
-      } catch (e) {
-        console.error('Featured posts failed:', e);
-        renderEmpty(featuredEl, 'Beiträge konnten nicht geladen werden', 'Bitte lade die Seite neu oder besuche das Blog direkt.');
-      }
-
-      // Latest Posts (chronological)
-      try {
-        const latest = await fetchPosts({ limit: 12 });
-        if (latest.length === 0) {
-          renderEmpty(postsEl, 'Noch keine Beiträge.', 'Aktuell sind noch keine Beiträge veröffentlicht.');
-        } else {
-          postsEl.innerHTML = latest.map(renderPostCard).join('');
-        }
-      } catch (e) {
-        console.error('Latest posts failed:', e);
-        renderEmpty(postsEl, 'Beiträge konnten nicht geladen werden', 'Bitte lade die Seite neu oder besuche das Blog direkt.');
-      }
-
-      // Re-trigger reveal observer for newly inserted cards
-      document.querySelectorAll('#featured-grid .reveal, #posts-grid .reveal').forEach(el => revealObserver.observe(el));
-    })();
+    // Newsletter läuft über Brevo (Cloudflare Worker) — siehe Newsletter-Handler unten.
 
     // ============================================
     // SCROLL REVEAL (IntersectionObserver)
@@ -1328,10 +1190,10 @@
         if (arrow) arrow.style.display = 'none';
 
         try {
-          const response = await fetch(`${GHOST_URL}/members/api/send-magic-link/`, {
+          const response = await fetch('https://brevo-doi.b-kayumi.workers.dev/', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email, emailType: 'signup' })
+            body: JSON.stringify({ email, company: '' })
           });
 
           if (response.ok) {
