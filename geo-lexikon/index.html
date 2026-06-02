@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GEO-Lexikon aus der Praxis | Belal Kayumi</title>
+  <meta name="description" content="Begriffe rund um AI Search, KI-Sichtbarkeit und GEO — mit Definition, Belals Perspektive und Praxisbeispiel. Das deutschsprachige Glossar für Generative Engine Optimization.">
+  <meta name="author" content="Belal Kayumi">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <link rel="canonical" href="https://belalkayumi.com/geo-lexikon">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1C1917">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="GEO-Lexikon aus der Praxis | Belal Kayumi">
+  <meta property="og:description" content="Begriffe rund um AI Search, KI-Sichtbarkeit und GEO — mit Definition, Belals Perspektive und Praxisbeispiel.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://belalkayumi.com/geo-lexikon">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Belal Kayumi">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="GEO-Lexikon aus der Praxis | Belal Kayumi">
+  <meta name="twitter:description" content="Begriffe rund um AI Search, KI-Sichtbarkeit und GEO — mit Definition, Belals Perspektive und Praxisbeispiel.">
+
+  <!-- Fonts (lokal — DSGVO-konform) -->
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/bricolage-grotesque-700.woff2" crossorigin>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTermSet",
+    "name": "GEO-Lexikon von Belal Kayumi",
+    "description": "Deutschsprachiges Glossar zu den Themen AI Search, KI-Sichtbarkeit und Generative Engine Optimization (GEO).",
+    "url": "https://belalkayumi.com/geo-lexikon",
+    "inLanguage": "de",
+    "author": {
+      "@type": "Person",
+      "@id": "https://belalkayumi.com/#person",
+      "name": "Belal Kayumi",
+      "url": "https://belalkayumi.com"
+    },
+    "dateModified": "2026-06-01",
+    "hasPart": [
+      { "@type": "DefinedTerm", "name": "Generative Engine Optimization (GEO)", "url": "https://belalkayumi.com/geo-lexikon/geo" },
+      { "@type": "DefinedTerm", "name": "Vendor-Selection-Prompt", "url": "https://belalkayumi.com/geo-lexikon/vendor-selection-prompt" },
+      { "@type": "DefinedTerm", "name": "Informations-Prompt", "url": "https://belalkayumi.com/geo-lexikon/informations-prompt" },
+      { "@type": "DefinedTerm", "name": "KI-Sichtbarkeit", "url": "https://belalkayumi.com/geo-lexikon/ki-sichtbarkeit" },
+      { "@type": "DefinedTerm", "name": "Entity", "url": "https://belalkayumi.com/geo-lexikon/entity" },
+      { "@type": "DefinedTerm", "name": "Citation", "url": "https://belalkayumi.com/geo-lexikon/citation" },
+      { "@type": "DefinedTerm", "name": "Co-Citation", "url": "https://belalkayumi.com/geo-lexikon/co-citation" },
+      { "@type": "DefinedTerm", "name": "AI Search", "url": "https://belalkayumi.com/geo-lexikon/ai-search" },
+      { "@type": "DefinedTerm", "name": "llms.txt", "url": "https://belalkayumi.com/geo-lexikon/llms-txt" },
+      { "@type": "DefinedTerm", "name": "Share of Voice (AI)", "url": "https://belalkayumi.com/geo-lexikon/share-of-voice" }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ============================================
+       FONTS (local — DSGVO-konform)
+       ============================================ */
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/bricolage-grotesque-400.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/bricolage-grotesque-500.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/bricolage-grotesque-600.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/bricolage-grotesque-700.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 800; font-display: swap; src: url('/fonts/bricolage-grotesque-800.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 300; font-display: swap; src: url('/fonts/inter-300.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/inter-400.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/inter-500.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/inter-600.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/inter-700.woff2') format('woff2'); }
+
+    /* ============================================
+       RESET & BASE
+       ============================================ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #FDFCFA;
+      --bg-warm: #F5F0EB;
+      --bg-card: #FFFFFF;
+      --bg-dark: #1C1917;
+      --bg-dark-card: #292524;
+      --accent: #28D0B3;
+      --accent-hover: #1FA893;
+      --accent-soft: #ECFDF8;
+      --text: #1C1917;
+      --text-secondary: #57534E;
+      --text-muted: #A8A29E;
+      --text-on-dark: #FAFAF9;
+      --border: #E7E5E4;
+      --border-dark: #3D3835;
+      --font-heading: 'Bricolage Grotesque', system-ui, sans-serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    ::selection { background: var(--accent); color: var(--bg-dark); }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ============================================
+       NAVIGATION
+       ============================================ */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(253, 252, 250, 0.75);
+      backdrop-filter: saturate(140%) blur(16px);
+      -webkit-backdrop-filter: saturate(140%) blur(16px);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s var(--ease), background 0.3s var(--ease);
+    }
+    .nav.is-scrolled {
+      background: rgba(253, 252, 250, 0.95);
+      border-bottom-color: var(--border);
+    }
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+      transition: padding 0.3s var(--ease);
+    }
+    .nav.is-scrolled .nav__inner { padding: 12px 0; }
+    .nav__logo {
+      font-family: var(--font-heading);
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+    .nav__links {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .nav__links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav__links a::after {
+      content: '';
+      position: absolute;
+      bottom: -2px; left: 0;
+      width: 0; height: 1.5px;
+      background: var(--accent);
+      transition: width 0.25s var(--ease);
+    }
+    .nav__links a:hover { color: var(--text); }
+    .nav__links a:hover::after { width: 100%; }
+    .nav__links a.active { color: var(--text); }
+    .nav__links a.active::after { width: 100%; }
+    .nav__cta {
+      font-family: var(--font-body);
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: var(--bg-dark);
+      color: var(--text-on-dark);
+      transition: background 0.2s;
+    }
+    .nav__cta:hover { background: #292524; }
+    .nav__toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 4px;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+    .nav__toggle span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: all 0.25s var(--ease);
+    }
+    @media (max-width: 768px) {
+      .nav__links, .nav__cta { display: none; }
+      .nav__toggle { display: flex; }
+    }
+
+    /* ============================================
+       BREADCRUMB
+       ============================================ */
+    .breadcrumb {
+      padding: 100px 0 0;
+    }
+    .breadcrumb__list {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .breadcrumb__list a { color: var(--text-muted); transition: color 0.2s; }
+    .breadcrumb__list a:hover { color: var(--text-secondary); }
+    .breadcrumb__sep { color: var(--border); }
+    .breadcrumb__current { color: var(--text-secondary); }
+
+    /* ============================================
+       PAGE HEADER
+       ============================================ */
+    .page-header {
+      padding: 32px 0 56px;
+    }
+    .page-header__eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+    .page-header__eyebrow::before {
+      content: '';
+      display: block;
+      width: 20px; height: 1.5px;
+      background: var(--accent);
+    }
+    .page-header__title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .page-header__sub {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      max-width: 640px;
+      line-height: 1.65;
+      margin-bottom: 10px;
+    }
+    .page-header__meta {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 8px;
+    }
+
+    /* ============================================
+       GLOSSAR GRID
+       ============================================ */
+    .glossar-section {
+      padding-bottom: 96px;
+    }
+    .glossar-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    @media (max-width: 640px) {
+      .glossar-grid { grid-template-columns: 1fr; }
+    }
+
+    .glossar-card {
+      display: block;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      transition: border-color 150ms ease, box-shadow 150ms ease;
+      text-decoration: none;
+      color: inherit;
+    }
+    .glossar-card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 16px rgba(40, 208, 179, 0.08);
+    }
+
+    .glossar-card__header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
+    .glossar-card__term {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      line-height: 1.3;
+    }
+    .glossar-card__sub {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .glossar-card__def {
+      font-size: 0.875rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+    .glossar-card__arrow {
+      font-size: 16px;
+      color: var(--text-muted);
+      flex-shrink: 0;
+      margin-top: 2px;
+      transition: color 150ms ease, transform 150ms ease;
+    }
+    .glossar-card:hover .glossar-card__arrow {
+      color: var(--accent);
+      transform: translateX(3px);
+    }
+
+    /* ============================================
+       BADGE
+       ============================================ */
+    .badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 3px 10px;
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .badge--grundbegriff { background: #F3F3F3; color: #444444; }
+    .badge--ip { background: #E6FAF7; color: #0A7A6A; }
+    .badge--tech { background: #F0F0F0; color: #555555; }
+
+    /* ============================================
+       REVEAL
+       ============================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.06s; }
+    .reveal-delay-2 { transition-delay: 0.12s; }
+    .reveal-delay-3 { transition-delay: 0.18s; }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; }
+    }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .footer {
+      background: var(--bg-dark);
+      color: var(--text-on-dark);
+      padding: 64px 0 40px;
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border-dark);
+    }
+    .footer__brand {
+      font-family: var(--font-heading);
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .footer__tagline {
+      font-size: 14px;
+      color: #A8A29E;
+      line-height: 1.6;
+      max-width: 320px;
+    }
+    .footer__heading {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #6B6560;
+      margin-bottom: 20px;
+    }
+    .footer__links { list-style: none; }
+    .footer__links li { margin-bottom: 10px; }
+    .footer__links a {
+      font-size: 14px;
+      color: #A8A29E;
+      transition: color 0.2s;
+    }
+    .footer__links a:hover { color: var(--accent); }
+    .footer__bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 32px;
+      font-size: 13px;
+      color: #6B6560;
+    }
+    @media (max-width: 768px) {
+      .footer__grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .footer__grid { grid-template-columns: 1fr; }
+      .footer__bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo">belal kayumi</a>
+        <nav>
+          <ul class="nav__links">
+            <li><a href="/#ki-sichtbarkeit">KI-Sichtbarkeit</a></li>
+            <li><a href="/vier-saeulen-ki-sichtbarkeit">Strategie</a></li>
+            <li><a href="/#ueber-mich">Über mich</a></li>
+            <li><a href="/#lernlabor">Praxis</a></li>
+            <li><a href="/erkenntnisse-ki-sichtbarkeit">Erkenntnisse</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/geo-lexikon" class="active">Glossar</a></li>
+          </ul>
+        </nav>
+        <a href="/#newsletter" class="nav__cta">Newsletter <span aria-hidden="true">→</span></a>
+        <button class="nav__toggle" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+      <div class="container">
+        <ol class="breadcrumb__list" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <a href="/" itemprop="item"><span itemprop="name">Start</span></a>
+            <meta itemprop="position" content="1">
+          </li>
+          <li class="breadcrumb__sep" aria-hidden="true">›</li>
+          <li class="breadcrumb__current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+            <span itemprop="name">GEO-Lexikon</span>
+            <meta itemprop="position" content="2">
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- PAGE HEADER -->
+    <div class="page-header">
+      <div class="container" style="max-width: 860px;">
+        <div class="page-header__eyebrow">GEO-Lexikon</div>
+        <h1 class="page-header__title reveal">GEO-Lexikon aus der Praxis</h1>
+        <p class="page-header__sub reveal reveal-delay-1">Begriffe rund um AI Search, KI-Sichtbarkeit und Generative Engine Optimization — mit Definition, Belals Perspektive und Praxisbeispiel.</p>
+        <p class="page-header__meta reveal reveal-delay-2">Zuletzt aktualisiert: 01. Juni 2026</p>
+      </div>
+    </div>
+
+    <!-- GLOSSAR GRID -->
+    <section class="glossar-section">
+      <div class="container" style="max-width: 860px;">
+        <div class="glossar-grid">
+
+          <!-- AI Search -->
+          <a href="/geo-lexikon/ai-search" class="glossar-card reveal">
+            <div class="glossar-card__header">
+              <div>
+                <div class="glossar-card__term">AI Search</div>
+                <div class="glossar-card__sub">dt. KI-gestützte Suche</div>
+              </div>
+              <div class="glossar-card__arrow">→</div>
+            </div>
+            <span class="badge badge--grundbegriff">Grundbegriff</span>
+            <p class="glossar-card__def" style="margin-top: 10px;">Suchsysteme auf LLM-Basis, die Anfragen mit synthetisierten Antworten beantworten — statt klassischer Linklisten.</p>
+          </a>
+
+          <!-- Citation -->
+          <a href="/geo-lexikon/citation" class="glossar-card reveal reveal-delay-1">
+            <div class="glossar-card__header">
+              <div>
+                <div class="glossar-card__term">Citation</div>
+                <div class="glossar-card__sub">dt. Zitierung / Quellenangabe</div>
+              </div>
+              <div class="glossar-card__arrow">→</div>
+            </div>
+            <span class="badge badge--grundbegriff">Grundbegriff</span>
+            <p class="glossar-card__def" style="margin-top: 10px;">Namentliche Erwähnung oder Verlinkung einer Quelle in einer KI-generierten Antwort — das primäre Sichtbarkeitssignal im AI Search.</p>
+          </a>
+
+          <!-- Co-Citation -->
+          <a href="/geo-lexikon/co-citation" class="glossar-card reveal">
+            <div class="glossar-card__header">
+              <div>
+                <div class="glossar-card__term">Co-Citation</div>
+                <div class="glossar-card__sub">engl. Co-Citation / Co-Occurrence</div>
+              </div>
+              <div class="glossar-card__arrow">→</div>
+            </div>
+            <span class="badge badge--tech">Technischer Begriff</span>
+            <p class="glossar-card__def" style="margin-top: 10px;">Wiederholtes gemeinsames Auftreten einer Marke mit bestimmten Themen in KI-Antworten — zentrales Assoziationssignal für LLMs.</p>
+          </a>
+
+          <!-- Entity -->
+          <a href="/geo-lexikon/entity" class="glossar-card reveal reveal-delay-1">
+            <div class="glossar-card__header">
+              <div>
+                <div class="glossar-card__term">Entity</div>
+                <div class="glossar-card__sub">dt. Entität / KI-Wissensobjekt</div>
+              </div>
+              <div class="glossar-card__arrow">→</div>
+            </div>
+            <span class="badge badge--tech">Technischer Begriff</span>
+            <p class="glossar-card__def" style="margin-top: 10px;">Eindeutig identifizierbares Objekt im Wissensnetz eines Sprachmodells — Person, Organisation, Ort oder Konzept.</p>
+          </a>
+
+          <!-- GEO -->
+          <a href="/geo-lexikon/geo" class="glossar-card reveal">
+            <div class="glossar-card__header">
+              <div>
+                <div class="glossar-card__term">Generative Engine Optimization (GEO)</div>
+                <div class="glossar-card__sub">Auch: AI Search Optimization, LLMO, AEO</div>
+              </div>
+              <div class="glossar-card__arrow">→</div>
+            </div>
+            <span class="badge badge--grundbegriff">Grundbegriff</span>
+            <p class="glossar-card__def" style="margin-top: 10px;">Gezielte Optimierung von Inhalten, damit Marken in KI-generierten Antworten sichtbar werden und als Quellen zitiert werden.</p>
+          </a>
+
+          <!-- Informations-Prompt -->
+          <a href="/geo-lexikon/informations-prompt" class="glossar-card reveal reveal-delay-1">
+            <div class="glossar-card__header">
+              <div>
+                <div class="glossar-card__term">Informations-Prompt</div>
+                <div class="glossar-card__sub">dt. Informationsanfrage</div>
+              </div>
+              <div class="glossar-card__arrow">→</div>
+            </div>
+            <span class="badge badge--ip">Belals IP</span>
+            <p class="glossar-card__def" style="margin-top: 10px;">KI-Suchanfrage, bei der ein Nutzer ein Thema verstehen möchte — ohne unmittelbar nach einem Anbieter zu suchen.</p>
+          </a>
+
+          <!-- KI-Sichtbarkeit -->
+          <a href="/geo-lexikon/ki-sichtbarkeit" class="glossar-card reveal">
+            <div class="glossar-card__header">
+              <div>
+                <div class="glossar-card__term">KI-Sichtbarkeit</div>
+                <div class="glossar-card__sub">engl. AI Visibility</div>
+              </div>
+              <div class="glossar-card__arrow">→</div>
+            </div>
+            <span class="badge badge--grundbegriff">Grundbegriff</span>
+            <p class="glossar-card__def" style="margin-top: 10px;">Wie präsent eine Marke in den Antworten generativer KI-Systeme ist — gemessen an Erwähnungen, Zitierungen und Kontext.</p>
+          </a>
+
+          <!-- llms.txt -->
+          <a href="/geo-lexikon/llms-txt" class="glossar-card reveal reveal-delay-1">
+            <div class="glossar-card__header">
+              <div>
+                <div class="glossar-card__term">llms.txt</div>
+                <div class="glossar-card__sub">kein dt. Äquivalent</div>
+              </div>
+              <div class="glossar-card__arrow">→</div>
+            </div>
+            <span class="badge badge--tech">Technischer Begriff</span>
+            <p class="glossar-card__def" style="margin-top: 10px;">Textdatei im Root-Verzeichnis einer Website, die KI-Systemen strukturierte Informationen über den Seiteninhalt bereitstellt.</p>
+          </a>
+
+          <!-- Share of Voice -->
+          <a href="/geo-lexikon/share-of-voice" class="glossar-card reveal">
+            <div class="glossar-card__header">
+              <div>
+                <div class="glossar-card__term">Share of Voice (AI)</div>
+                <div class="glossar-card__sub">dt. Markenanteil in KI-Antworten</div>
+              </div>
+              <div class="glossar-card__arrow">→</div>
+            </div>
+            <span class="badge badge--grundbegriff">Grundbegriff</span>
+            <p class="glossar-card__def" style="margin-top: 10px;">Prozentualer Anteil der eigenen Markenerwähnungen in KI-generierten Antworten im Vergleich zu Wettbewerbern.</p>
+          </a>
+
+          <!-- Vendor-Selection-Prompt -->
+          <a href="/geo-lexikon/vendor-selection-prompt" class="glossar-card reveal reveal-delay-1">
+            <div class="glossar-card__header">
+              <div>
+                <div class="glossar-card__term">Vendor-Selection-Prompt</div>
+                <div class="glossar-card__sub">dt. Anbieter-Auswahlprompt</div>
+              </div>
+              <div class="glossar-card__arrow">→</div>
+            </div>
+            <span class="badge badge--ip">Belals IP</span>
+            <p class="glossar-card__def" style="margin-top: 10px;">KI-Suchanfrage mit direktem kommerziellem Charakter — Nutzer sucht aktiv nach einem Anbieter, einer Agentur oder einem Dienstleister.</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">belal kayumi</div>
+          <p class="footer__tagline">
+            Eine der ersten deutschsprachigen Stimmen zu Generative Engine Optimization (GEO) und KI-Sichtbarkeit. Damit dein Unternehmen genannt wird, wenn die KI antwortet.
+          </p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <ul class="footer__links">
+            <li><a href="/#ki-sichtbarkeit">KI-Sichtbarkeit</a></li>
+            <li><a href="/vier-saeulen-ki-sichtbarkeit">Strategie</a></li>
+            <li><a href="/#ueber-mich">Über mich</a></li>
+            <li><a href="/#lernlabor">Praxis</a></li>
+            <li><a href="/erkenntnisse-ki-sichtbarkeit">Erkenntnisse KI-Sichtbarkeit</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/geo-lexikon">Glossar</a></li>
+            <li><a href="/#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Kontakt</div>
+          <ul class="footer__links">
+            <li><a href="https://www.linkedin.com/in/belalkayumi/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:hello@belalkayumi.com">E-Mail</a></li>
+            <li><a href="https://rlvnt.ai" target="_blank" rel="noopener">RLVNT.AI</a></li>
+            <li><a href="/impressum">Impressum</a></li>
+            <li><a href="/datenschutz">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div>© 2026 Belal Kayumi. Alle Rechte vorbehalten.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // NAV SCROLL STATE
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) nav.classList.add('is-scrolled');
+      else nav.classList.remove('is-scrolled');
+    }, { passive: true });
+
+    // SCROLL REVEAL
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    revealEls.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>
