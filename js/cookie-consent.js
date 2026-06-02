@@ -1,15 +1,12 @@
 (function () {
   'use strict';
 
-  // ── Config ──────────────────────────────────────────────────────
-  const GA_ID         = 'G-LX775TTC7E';
-  const CONSENT_KEY   = 'ck_consent_v1';
+  const GA_ID             = 'G-LX775TTC7E';
+  const CONSENT_KEY       = 'ck_consent_v1';
   const CONSENT_EXPIRY_DAYS = 365;
 
-  // ── State ────────────────────────────────────────────────────────
   let state = { analytics: false, given: false };
 
-  // ── Helpers ──────────────────────────────────────────────────────
   function setCookie(name, value, days) {
     const d = new Date();
     d.setTime(d.getTime() + days * 864e5);
@@ -25,8 +22,17 @@
     document.cookie = `${name}=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;`;
   }
 
-  // ── UI ───────────────────────────────────────────────────────────
+  function collapseDetails() {
+    const categories = document.getElementById('ck-categories');
+    const toggleBtn  = document.querySelector('.ck-details-toggle');
+    const saveBtn    = document.getElementById('ck-save-btn');
+    if (categories) categories.hidden = true;
+    if (toggleBtn)  toggleBtn.setAttribute('aria-expanded', 'false');
+    if (saveBtn)    saveBtn.style.display = 'none';
+  }
+
   function showBanner() {
+    collapseDetails();
     document.getElementById('ck-overlay').style.display = 'flex';
     document.getElementById('ck-revoke-btn').style.display = 'none';
     document.body.style.overflow = 'hidden';
@@ -39,29 +45,26 @@
   }
 
   function syncToggle() {
-    document.getElementById('ck-analytics').checked = state.analytics;
+    const el = document.getElementById('ck-analytics');
+    if (el) el.checked = state.analytics;
   }
 
-  // ── Google Analytics loading ──────────────────────────────────────
   function loadGA() {
     if (document.getElementById('ck-ga-script')) return;
     window.dataLayer = window.dataLayer || [];
     function gtag() { window.dataLayer.push(arguments); }
     window.gtag = gtag;
-
     gtag('consent', 'update', {
       analytics_storage: 'granted',
       ad_storage: 'denied',
       ad_user_data: 'denied',
       ad_personalization: 'denied'
     });
-
     const s = document.createElement('script');
     s.id = 'ck-ga-script';
     s.async = true;
     s.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
     document.head.appendChild(s);
-
     gtag('js', new Date());
     gtag('config', GA_ID, {
       anonymize_ip: true,
@@ -74,7 +77,6 @@
     ['_ga', `_ga_${GA_ID.replace('G-', '')}`].forEach(name => deleteCookie(name));
   }
 
-  // ── Default Consent Mode (vor jeder Nutzeraktion) ─────────────────
   function initConsentMode() {
     window.dataLayer = window.dataLayer || [];
     function gtag() { window.dataLayer.push(arguments); }
@@ -88,57 +90,42 @@
     });
   }
 
-  // ── Save & Apply ──────────────────────────────────────────────────
   function applyConsent(analyticsAllowed) {
     state.analytics = analyticsAllowed;
     state.given     = true;
     setCookie(CONSENT_KEY, state, CONSENT_EXPIRY_DAYS);
-
-    if (analyticsAllowed) {
-      loadGA();
-    } else {
-      unloadGA();
-    }
-
+    if (analyticsAllowed) { loadGA(); } else { unloadGA(); }
     hideBanner();
     syncToggle();
-
     document.dispatchEvent(new CustomEvent('cookieConsentUpdate', { detail: { ...state } }));
   }
 
-  // ── Public API ────────────────────────────────────────────────────
   window.CookieConsent = {
-    acceptAll() { applyConsent(true); },
-    rejectAll()  { applyConsent(false); },
+    acceptAll()     { applyConsent(true); },
+    rejectAll()     { applyConsent(false); },
     saveSelection() {
-      const allowed = document.getElementById('ck-analytics').checked;
-      applyConsent(allowed);
+      const el = document.getElementById('ck-analytics');
+      applyConsent(el ? el.checked : false);
     },
-    showSettings() {
-      showBanner();
-      const btn = document.querySelector('.ck-details-toggle');
-      const categories = document.getElementById('ck-categories');
-      if (btn && categories) {
-        categories.hidden = false;
-        btn.setAttribute('aria-expanded', 'true');
-      }
-      syncToggle();
-    },
+    showSettings()  { showBanner(); syncToggle(); },
     toggleDetails(btn) {
       const categories = document.getElementById('ck-categories');
+      const saveBtn    = document.getElementById('ck-save-btn');
       const open = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', String(!open));
       categories.hidden = open;
+      if (saveBtn) saveBtn.style.display = open ? 'none' : '';
+      syncToggle();
     },
     reset() {
       deleteCookie(CONSENT_KEY);
       state = { analytics: false, given: false };
       showBanner();
-      document.getElementById('ck-analytics').checked = false;
+      const el = document.getElementById('ck-analytics');
+      if (el) el.checked = false;
     }
   };
 
-  // ── Init ──────────────────────────────────────────────────────────
   initConsentMode();
 
   const saved = getCookie(CONSENT_KEY);

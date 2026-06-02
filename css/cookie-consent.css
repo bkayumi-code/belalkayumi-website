@@ -1,163 +1,152 @@
-/* ─── Reset & Tokens ──────────────────────────────────────────── */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 :root {
-  --bg-light:   #FDFCFA;
-  --bg-dark:    #1C1917;
-  --teal:       #28D0B3;
-  --teal-dark:  #1da890;
-  --stone-200:  #E7E5E4;
-  --stone-400:  #A8A29E;
-  --stone-600:  #57534E;
-  --stone-900:  #1C1917;
-  --font-body:  'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-disp:  'Bricolage Grotesque', var(--font-body);
-  --radius:     12px;
-  --shadow:     0 8px 32px rgba(0,0,0,0.18);
+  --ck-bg:      #FDFCFA;
+  --ck-dark:    #1C1917;
+  --ck-teal:    #28D0B3;
+  --ck-teal-d:  #1da890;
+  --ck-s200:    #E7E5E4;
+  --ck-s400:    #A8A29E;
+  --ck-s600:    #57534E;
+  --ck-body:    'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --ck-disp:    'Bricolage Grotesque', var(--ck-body);
 }
 
-/* ─── Overlay ─────────────────────────────────────────────────── */
+/* ── Overlay ───────────────────────────────────────────────────── */
 #ck-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(28,25,23,0.55);
-  backdrop-filter: blur(4px);
+  background: rgba(28,25,23,0.5);
+  backdrop-filter: blur(3px);
   z-index: 9998;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 24px;
 }
 
 @media (min-width: 640px) {
-  #ck-overlay { align-items: center; }
+  #ck-overlay { align-items: center; padding: 24px; }
 }
 
-/* ─── Banner Card ─────────────────────────────────────────────── */
+/* ── Banner ────────────────────────────────────────────────────── */
 #ck-banner {
-  background: var(--bg-light);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  max-width: 560px;
+  background: var(--ck-bg);
   width: 100%;
+  border-radius: 14px 14px 0 0;
+  box-shadow: 0 -4px 24px rgba(0,0,0,0.12);
   overflow: hidden;
-  animation: slideUp .28s cubic-bezier(.16,1,.3,1);
+  animation: ckUp .25s cubic-bezier(.16,1,.3,1);
 }
 
-@keyframes slideUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
+@media (min-width: 640px) {
+  #ck-banner {
+    max-width: 520px;
+    border-radius: 14px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  }
 }
 
-/* ─── Header stripe ───────────────────────────────────────────── */
-.ck-stripe {
-  height: 4px;
-  background: var(--teal);
+@keyframes ckUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
 }
 
-/* ─── Body ────────────────────────────────────────────────────── */
-.ck-body {
-  padding: 28px 28px 0;
-}
+/* ── Stripe ────────────────────────────────────────────────────── */
+.ck-stripe { height: 3px; background: var(--ck-teal); }
+
+/* ── Body ──────────────────────────────────────────────────────── */
+.ck-body { padding: 16px 16px 0; }
+
+@media (min-width: 640px) { .ck-body { padding: 24px 24px 0; } }
 
 .ck-title {
-  font-family: var(--font-disp);
-  font-size: 1.15rem;
+  font-family: var(--ck-disp);
+  font-size: 0.95rem;
   font-weight: 700;
-  color: var(--stone-900);
-  margin-bottom: 10px;
+  color: var(--ck-dark);
+  margin-bottom: 4px;
 }
+
+@media (min-width: 640px) { .ck-title { font-size: 1.1rem; margin-bottom: 8px; } }
 
 .ck-text {
-  font-size: 0.875rem;
-  line-height: 1.6;
-  color: var(--stone-600);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--ck-s600);
+  font-family: var(--ck-body);
 }
 
-.ck-text a {
-  color: var(--teal-dark);
-  text-decoration: underline;
-  text-underline-offset: 2px;
-}
+@media (min-width: 640px) { .ck-text { font-size: 0.85rem; } }
 
-/* ─── Details toggle ──────────────────────────────────────────── */
-.ck-details-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 14px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  color: var(--stone-600);
-  cursor: pointer;
-  background: none;
-  border: none;
-  padding: 0;
-  letter-spacing: .01em;
-}
+.ck-text a { color: var(--ck-teal-d); text-decoration: underline; text-underline-offset: 2px; }
 
-.ck-details-toggle:hover { color: var(--teal-dark); }
-
-.ck-chevron {
-  display: inline-block;
-  transition: transform .2s;
-  font-size: 0.7rem;
-}
-
-.ck-details-toggle[aria-expanded="true"] .ck-chevron {
-  transform: rotate(180deg);
-}
-
-/* ─── Categories ──────────────────────────────────────────────── */
+/* ── Categories (hidden by default) ───────────────────────────── */
 .ck-categories {
-  margin-top: 16px;
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
+
+@media (min-width: 640px) { .ck-categories { gap: 8px; } }
 
 .ck-category {
   background: #F5F4F2;
-  border: 1px solid var(--stone-200);
+  border: 1px solid var(--ck-s200);
   border-radius: 8px;
-  padding: 12px 14px;
+  padding: 10px 12px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: flex-start;
   gap: 12px;
 }
 
 .ck-cat-info { flex: 1; }
 
 .ck-cat-name {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  color: var(--stone-900);
-  margin-bottom: 3px;
+  color: var(--ck-dark);
+  font-family: var(--ck-body);
 }
 
 .ck-cat-desc {
-  font-size: 0.775rem;
-  color: var(--stone-400);
-  line-height: 1.45;
+  font-size: 0.7rem;
+  color: var(--ck-s400);
+  margin-top: 1px;
+  line-height: 1.3;
 }
 
-/* ─── Toggle switch ───────────────────────────────────────────── */
+.ck-cat-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  flex-shrink: 0;
+}
+
+.ck-required-label {
+  font-size: 0.6rem;
+  color: var(--ck-s400);
+  font-weight: 500;
+  white-space: nowrap;
+  font-family: var(--ck-body);
+}
+
+/* ── Toggle ────────────────────────────────────────────────────── */
 .ck-toggle {
   position: relative;
   flex-shrink: 0;
-  width: 40px;
-  height: 22px;
-  margin-top: 2px;
+  width: 36px;
+  height: 20px;
+  display: block;
 }
 
-.ck-toggle input { opacity: 0; width: 0; height: 0; }
+.ck-toggle input { opacity: 0; width: 0; height: 0; position: absolute; }
 
 .ck-slider {
   position: absolute;
   inset: 0;
-  background: var(--stone-200);
-  border-radius: 22px;
+  background: var(--ck-s200);
+  border-radius: 20px;
   cursor: pointer;
   transition: background .2s;
 }
@@ -165,95 +154,118 @@
 .ck-slider::before {
   content: '';
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
   left: 3px;
-  bottom: 3px;
+  top: 3px;
   background: #fff;
   border-radius: 50%;
   transition: transform .2s;
-  box-shadow: 0 1px 3px rgba(0,0,0,.15);
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 
-input:checked + .ck-slider { background: var(--teal); }
-input:checked + .ck-slider::before { transform: translateX(18px); }
-input:disabled + .ck-slider { opacity: .55; cursor: not-allowed; }
+input:checked  + .ck-slider { background: var(--ck-teal); }
+input:checked  + .ck-slider::before { transform: translateX(16px); }
+input:disabled + .ck-slider { opacity: .5; cursor: not-allowed; }
 
-.ck-required-label {
-  font-size: 0.7rem;
-  color: var(--stone-400);
-  font-weight: 500;
-  letter-spacing: .02em;
-  flex-shrink: 0;
-  margin-top: 4px;
-  white-space: nowrap;
-}
-
-/* ─── Actions ─────────────────────────────────────────────────── */
+/* ── Actions ───────────────────────────────────────────────────── */
 .ck-actions {
-  padding: 20px 28px 24px;
+  padding: 12px 16px 8px;
   display: flex;
-  flex-direction: column;
-  gap: 8px;
+  flex-direction: row;
+  gap: 6px;
 }
 
-@media (min-width: 420px) {
-  .ck-actions {
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-}
+@media (min-width: 640px) { .ck-actions { padding: 16px 24px 8px; gap: 8px; } }
 
 .ck-btn {
   flex: 1;
-  padding: 10px 18px;
+  padding: 10px 8px;
   border-radius: 8px;
-  font-family: var(--font-body);
-  font-size: 0.875rem;
+  font-family: var(--ck-body);
+  font-size: 0.78rem;
   font-weight: 600;
   cursor: pointer;
   border: none;
-  transition: background .15s, color .15s, opacity .15s;
+  transition: opacity .15s;
+  text-align: center;
   white-space: nowrap;
 }
 
-.ck-btn:hover { opacity: .88; }
+@media (min-width: 640px) { .ck-btn { padding: 10px 16px; font-size: 0.875rem; } }
+
+.ck-btn:hover { opacity: .85; }
 
 .ck-btn-reject {
   background: transparent;
-  color: var(--stone-600);
-  border: 1px solid var(--stone-200);
+  color: var(--ck-s600);
+  border: 1px solid var(--ck-s200);
 }
 
 .ck-btn-save {
-  background: #F5F4F2;
-  color: var(--stone-900);
-  border: 1px solid var(--stone-200);
+  background: #F0FFFE;
+  color: var(--ck-dark);
+  border: 1px solid var(--ck-teal);
 }
 
 .ck-btn-accept {
-  background: var(--teal);
-  color: var(--stone-900);
+  background: var(--ck-teal);
+  color: var(--ck-dark);
 }
 
-/* ─── Small badge to re-open settings ────────────────────────── */
+/* ── Footer toggle ─────────────────────────────────────────────── */
+.ck-footer {
+  padding: 6px 16px 12px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 640px) { .ck-footer { padding: 4px 24px 16px; } }
+
+.ck-details-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--ck-s400);
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px 8px;
+  font-family: var(--ck-body);
+  letter-spacing: .01em;
+  transition: color .15s;
+}
+
+.ck-details-toggle:hover { color: var(--ck-teal-d); }
+
+.ck-chevron {
+  display: inline-block;
+  transition: transform .2s;
+  font-size: 0.6rem;
+}
+
+.ck-details-toggle[aria-expanded="true"] .ck-chevron { transform: rotate(180deg); }
+
+/* ── Revoke button ─────────────────────────────────────────────── */
 #ck-revoke-btn {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
+  bottom: 16px;
+  left: 16px;
   z-index: 9997;
-  background: var(--bg-dark);
-  color: var(--stone-400);
-  font-size: 0.72rem;
+  background: var(--ck-dark);
+  color: var(--ck-s400);
+  font-size: 0.65rem;
   font-weight: 500;
-  padding: 6px 12px;
+  padding: 5px 11px;
   border-radius: 99px;
   border: none;
   cursor: pointer;
   display: none;
-  font-family: var(--font-body);
+  font-family: var(--ck-body);
   letter-spacing: .02em;
   transition: color .15s;
 }
 
-#ck-revoke-btn:hover { color: var(--teal); }
+#ck-revoke-btn:hover { color: var(--ck-teal); }

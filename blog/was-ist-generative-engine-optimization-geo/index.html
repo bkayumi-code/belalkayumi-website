@@ -257,6 +257,7 @@
       .footer__grid { grid-template-columns: 1fr; gap: 32px; }
     }
   </style>
+  <link rel="stylesheet" href="/css/cookie-consent.css">
 </head>
 
 <body>
@@ -268,7 +269,7 @@
       <nav>
         <ul class="nav__links">
           <li><a href="/#ki-sichtbarkeit">KI-Sichtbarkeit</a></li>
-          <li><a href="/#themen">Strategie</a></li>
+          <li><a href="/vier-saeulen-ki-sichtbarkeit">Strategie</a></li>
           <li><a href="/#ueber-mich">Über mich</a></li>
           <li><a href="/#lernlabor">Praxis</a></li>
           <li><a href="/blog" class="is-active">Blog</a></li>
@@ -451,7 +452,7 @@
             <li>Aggarwal, P. et al. (2024): <em>GEO: Generative Engine Optimization.</em> Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. <a href="https://arxiv.org/abs/2311.09735" target="_blank" rel="noopener">→ Paper auf arXiv</a></li>
             <li>Previsible (2025): <em>2025 AI Traffic Report</em> — Daten zur AI-Referral-Traffic-Entwicklung</li>
             <li>Gartner (2024/2025): Prognose zur Entwicklung traditioneller Suchanfragen bis 2026</li>
-            <li>PR Report / RLVNT.AI (19. Februar 2026): <em>GEO-Leitfaden für die Unternehmenskommunikation</em> — co-autorisiert mit Tobias Bindhammer, Romina Gerhards und Matthias Biebl</li>
+            <li><a href="https://www.prreport.de/singlenews/uid-977144/ki-suche-der-geo-leitfaden-fuer-pr-profis/" target="_blank" rel="noopener">PR Report / RLVNT.AI (19. Februar 2026): <em>GEO-Leitfaden für die Unternehmenskommunikation</em></a> — co-autorisiert mit Tobias Bindhammer, Romina Gerhards und Matthias Biebl</li>
             <li>6sense / Forrester (2025): <em>B2B Buyer Experience Report 2025</em> — Daten zur LLM-Nutzung im B2B-Kaufprozess. <a href="https://6sense.com/science-of-b2b/buyer-experience-report-2025/" target="_blank" rel="noopener">→ Studie bei 6sense</a></li>
             <li>G2 (März 2026): <em>Half of B2B Software Buyers Now Start Their Research with AI Chatbots</em> — Befragung von 1.076 B2B-Entscheidern zur AI-Chatbot-Nutzung in Kaufprozessen</li>
           </ul>
@@ -462,8 +463,8 @@
           <div class="author__avatar" aria-hidden="true">B</div>
           <div class="author__body">
             <div class="author__name">Belal Kayumi</div>
-            <div class="author__role">Senior Manager bei RLVNT.AI · Co-Autor GEO-Leitfaden (PR Report) · Dozent Leibniz FH Hannover</div>
-            <p class="author__bio">Belal Kayumi ist Senior Manager bei <a href="https://rlvnt.ai" target="_blank" rel="noopener">RLVNT.AI</a>, einer KI-Kommunikationsagentur mit Fokus auf den DACH-Raum. Er ist Co-Autor eines GEO-Leitfadens für die Unternehmenskommunikation (erschienen im PR Report) und lehrt Digital Marketing an der Leibniz Fachhochschule Hannover. Seit 2026 führt er ein öffentliches GEO-Selbstexperiment durch und dokumentiert seine Ergebnisse hier. Fragen zu GEO oder zu deiner KI-Sichtbarkeit? <a href="mailto:hello@belalkayumi.com">Schreib mir eine E-Mail</a>.</p>
+            <div class="author__role">Senior Manager bei RLVNT.AI · Co-Autor <a href="https://www.prreport.de/singlenews/uid-977144/ki-suche-der-geo-leitfaden-fuer-pr-profis/" target="_blank" rel="noopener">GEO-Leitfaden (PR Report)</a> · Dozent Leibniz FH Hannover</div>
+            <p class="author__bio">Belal Kayumi ist Senior Manager bei <a href="https://rlvnt.ai" target="_blank" rel="noopener">RLVNT.AI</a>, einer KI-Kommunikationsagentur mit Fokus auf den DACH-Raum. Er ist Co-Autor eines GEO-Leitfadens für die Unternehmenskommunikation (erschienen im <a href="https://www.prreport.de/singlenews/uid-977144/ki-suche-der-geo-leitfaden-fuer-pr-profis/" target="_blank" rel="noopener">PR Report</a>) und lehrt Digital Marketing an der Leibniz Fachhochschule Hannover. Seit 2026 führt er ein öffentliches GEO-Selbstexperiment durch und dokumentiert seine Ergebnisse hier. Fragen zu GEO oder zu deiner KI-Sichtbarkeit? <a href="mailto:hello@belalkayumi.com">Schreib mir eine E-Mail</a>.</p>
             <a class="author__link" href="https://www.linkedin.com/in/belalkayumi/" target="_blank" rel="noopener">Auf LinkedIn vernetzen <span aria-hidden="true">→</span></a>
           </div>
         </div>
@@ -505,7 +506,7 @@
           <div class="footer__heading">Navigation</div>
           <ul class="footer__links">
             <li><a href="/#ki-sichtbarkeit">KI-Sichtbarkeit</a></li>
-            <li><a href="/#themen">Strategie</a></li>
+            <li><a href="/vier-saeulen-ki-sichtbarkeit">Strategie</a></li>
             <li><a href="/#ueber-mich">Über mich</a></li>
             <li><a href="/blog">Blog</a></li>
             <li><a href="/#faq">FAQ</a></li>
@@ -604,6 +605,52 @@
       });
     }
   </script>
+
+
+<!-- Cookie Banner -->
+<div id="ck-overlay" role="dialog" aria-modal="true" aria-labelledby="ck-title" style="display:none;">
+  <div id="ck-banner">
+    <div class="ck-stripe"></div>
+    <div class="ck-body">
+      <p class="ck-title" id="ck-title">Datenschutz-Einstellungen</p>
+      <p class="ck-text">Wir nutzen Cookies für anonyme Analyse (Google Analytics). <a href="/datenschutz" target="_blank">Datenschutzerklärung</a></p>
+
+      <div class="ck-categories" id="ck-categories" hidden>
+        <div class="ck-category">
+          <div class="ck-cat-info">
+            <div class="ck-cat-name">Notwendige Cookies</div>
+            <div class="ck-cat-desc">Session, Sicherheit — immer aktiv</div>
+          </div>
+          <div class="ck-cat-right">
+            <label class="ck-toggle"><input type="checkbox" checked disabled><span class="ck-slider"></span></label>
+            <span class="ck-required-label">Immer aktiv</span>
+          </div>
+        </div>
+        <div class="ck-category">
+          <div class="ck-cat-info">
+            <div class="ck-cat-name">Analyse-Cookies</div>
+            <div class="ck-cat-desc">Google Analytics (GA4) — anonym, keine Weitergabe</div>
+          </div>
+          <label class="ck-toggle"><input type="checkbox" id="ck-analytics" aria-label="Analyse-Cookies erlauben"><span class="ck-slider"></span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="ck-actions">
+      <button class="ck-btn ck-btn-reject" onclick="CookieConsent.rejectAll()">Ablehnen</button>
+      <button class="ck-btn ck-btn-save" id="ck-save-btn" style="display:none" onclick="CookieConsent.saveSelection()">Speichern</button>
+      <button class="ck-btn ck-btn-accept" onclick="CookieConsent.acceptAll()">Alle akzeptieren</button>
+    </div>
+
+    <div class="ck-footer">
+      <button class="ck-details-toggle" aria-expanded="false" onclick="CookieConsent.toggleDetails(this)">
+        Einstellungen anpassen <span class="ck-chevron">▼</span>
+      </button>
+    </div>
+  </div>
+</div>
+<button id="ck-revoke-btn" onclick="CookieConsent.showSettings()">Cookie-Einstellungen</button>
+<script src="/js/cookie-consent.js"></script>
 
 </body>
 </html>
