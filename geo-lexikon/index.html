@@ -441,6 +441,7 @@
       .footer__bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
     }
   </style>
+  <link rel="stylesheet" href="/css/cookie-consent.css">
 </head>
 <body>
 
@@ -696,5 +697,62 @@
     }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
     revealEls.forEach(el => revealObserver.observe(el));
   </script>
+
+<!-- Cookie Banner -->
+<div id="ck-overlay" role="dialog" aria-modal="true" aria-labelledby="ck-title" style="display:none;">
+  <div id="ck-banner">
+    <div class="ck-stripe"></div>
+    <div class="ck-body">
+      <p class="ck-title" id="ck-title">Wir respektieren deine Privatsphäre</p>
+      <p class="ck-text">
+        Diese Website verwendet Cookies. Notwendige Cookies sind für den Betrieb erforderlich.
+        Mit deiner Zustimmung setzen wir zusätzlich Google Analytics ein, um zu verstehen,
+        wie Inhalte genutzt werden — anonym und ohne personenbezogene Weitergabe an Dritte.
+        <br><br>
+        Mehr dazu in unserer <a href="/datenschutz" target="_blank">Datenschutzerklärung</a>.
+      </p>
+
+      <button class="ck-details-toggle" aria-expanded="false" onclick="CookieConsent.toggleDetails(this)">
+        Einstellungen anpassen <span class="ck-chevron">▼</span>
+      </button>
+
+      <div class="ck-categories" id="ck-categories" hidden>
+        <div class="ck-category">
+          <div class="ck-cat-info">
+            <div class="ck-cat-name">Notwendige Cookies</div>
+            <div class="ck-cat-desc">Sicherheit, Session-Management, Spracheinstellungen. Ohne diese Cookies funktioniert die Website nicht korrekt.</div>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:4px;">
+            <label class="ck-toggle">
+              <input type="checkbox" checked disabled>
+              <span class="ck-slider"></span>
+            </label>
+            <span class="ck-required-label">Immer aktiv</span>
+          </div>
+        </div>
+
+        <div class="ck-category">
+          <div class="ck-cat-info">
+            <div class="ck-cat-name">Analyse-Cookies</div>
+            <div class="ck-cat-desc">Google Analytics (GA4) — misst Seitenaufrufe und Interaktionen anonym. IP-Adressen werden anonymisiert. Daten werden nicht mit anderen Google-Diensten verknüpft.</div>
+          </div>
+          <label class="ck-toggle">
+            <input type="checkbox" id="ck-analytics" aria-label="Analyse-Cookies erlauben">
+            <span class="ck-slider"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="ck-actions">
+      <button class="ck-btn ck-btn-reject" onclick="CookieConsent.rejectAll()">Nur notwendige</button>
+      <button class="ck-btn ck-btn-save"   onclick="CookieConsent.saveSelection()">Auswahl speichern</button>
+      <button class="ck-btn ck-btn-accept" onclick="CookieConsent.acceptAll()">Alle akzeptieren</button>
+    </div>
+  </div>
+</div>
+<button id="ck-revoke-btn" onclick="CookieConsent.showSettings()">Cookie-Einstellungen</button>
+<script src="/js/cookie-consent.js"></script>
+
 </body>
 </html>
