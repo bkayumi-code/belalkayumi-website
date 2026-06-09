@@ -1,0 +1,1272 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Belal Kayumi · GEO &amp; KI-Sichtbarkeit im DACH-Raum</title>
+  <meta name="description" content="Belal Kayumi schreibt über GEO, KI-Sichtbarkeit und wie Marken in ChatGPT, Perplexity und Google AI Overviews zitiert werden — Praxis für den DACH-Raum.">
+  <meta name="author" content="Belal Kayumi">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="keywords" content="GEO Blog, Generative Engine Optimization, KI-Sichtbarkeit, AI Visibility, ChatGPT Optimierung, Perplexity Optimierung, Belal Kayumi, RLVNT.AI, DACH">
+  <link rel="canonical" href="https://belalkayumi.com/blog/">
+  <link rel="alternate" hreflang="de" href="https://belalkayumi.com/blog/">
+  <link rel="alternate" hreflang="x-default" href="https://belalkayumi.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1C1917">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog — Belal Kayumi · GEO &amp; KI-Sichtbarkeit im DACH-Raum">
+  <meta property="og:description" content="Forschung, Tools und Praxis-Beobachtungen zu GEO, KI-Sichtbarkeit und der Frage, wer in KI-Antworten zitiert wird.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://belalkayumi.com/blog/">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Belal Kayumi">
+  <meta property="og:image" content="https://images.ctfassets.net/iqbl54os2mnb/1wbGxIFKzIpVanF2LaKdSQ/e59fbd84318ab38f8c0f45bf19da837a/Der_Instagram_Algorithmus__1080_x_1700_px_.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog — Belal Kayumi · GEO &amp; KI-Sichtbarkeit">
+  <meta name="twitter:description" content="Forschung, Tools und Praxis-Beobachtungen zu GEO und KI-Sichtbarkeit aus dem DACH-Raum.">
+  <meta name="twitter:image" content="https://images.ctfassets.net/iqbl54os2mnb/1wbGxIFKzIpVanF2LaKdSQ/e59fbd84318ab38f8c0f45bf19da837a/Der_Instagram_Algorithmus__1080_x_1700_px_.png">
+
+  <!-- Fonts (local hosting — DSGVO-konform, kein externer Request) -->
+  <link rel="preload" as="font" type="font/woff2" href="fonts/inter-400.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/bricolage-grotesque-700.woff2" crossorigin>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Blog",
+        "@id": "https://belalkayumi.com/blog#blog",
+        "url": "https://belalkayumi.com/blog/",
+        "name": "Belal Kayumi — Blog zu GEO & KI-Sichtbarkeit",
+        "description": "Forschung, Tools und Praxis-Beobachtungen zu Generative Engine Optimization (GEO) und KI-Sichtbarkeit im DACH-Raum.",
+        "inLanguage": "de",
+        "author": {
+          "@type": "Person",
+          "@id": "https://belalkayumi.com/#person",
+          "name": "Belal Kayumi",
+          "url": "https://belalkayumi.com"
+        },
+        "publisher": {
+          "@type": "Person",
+          "@id": "https://belalkayumi.com/#person"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://belalkayumi.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://belalkayumi.com/blog/" }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ============================================
+       FONTS (local — DSGVO-konform)
+       ============================================ */
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/bricolage-grotesque-400.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 500; font-display: swap; src: url('fonts/bricolage-grotesque-500.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/bricolage-grotesque-600.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/bricolage-grotesque-700.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 800; font-display: swap; src: url('fonts/bricolage-grotesque-800.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 300; font-display: swap; src: url('fonts/inter-300.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/inter-400.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url('fonts/inter-500.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/inter-600.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/inter-700.woff2') format('woff2'); }
+
+    /* ============================================
+       RESET & BASE
+       ============================================ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #FDFCFA;
+      --bg-warm: #F5F0EB;
+      --bg-card: #FFFFFF;
+      --bg-dark: #1C1917;
+      --bg-dark-card: #292524;
+      --accent: #28D0B3;
+      --accent-hover: #1FA893;
+      --accent-soft: #ECFDF8;
+      --accent-bright: #5DE0C8;
+      --text: #1C1917;
+      --text-secondary: #57534E;
+      --text-muted: #A8A29E;
+      --text-on-dark: #FAFAF9;
+      --border: #E7E5E4;
+      --border-dark: #3D3835;
+      --success: #16A34A;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 14px;
+      --radius-xl: 16px;
+      --radius-2xl: 20px;
+      --radius-full: 999px;
+      --font-heading: 'Bricolage Grotesque', system-ui, sans-serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --shadow-sm: 0 1px 2px rgba(28, 25, 23, 0.04);
+      --shadow-md: 0 4px 20px rgba(28, 25, 23, 0.06);
+      --shadow-lg: 0 12px 40px rgba(28, 25, 23, 0.08);
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+
+    ::selection { background: var(--accent); color: var(--bg-dark); }
+
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; border: none; cursor: pointer; background: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ============================================
+       UTILITIES
+       ============================================ */
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .pill {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s var(--ease);
+    }
+    .pill--teal { color: var(--accent); background: var(--accent-soft); }
+    .pill--warm { color: var(--text-secondary); background: var(--bg-warm); }
+    .pill--outline { color: var(--text-secondary); background: transparent; border: 1px solid var(--border); }
+
+    .pill--teal::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 0 var(--accent);
+      animation: pulse-dot 2s infinite;
+    }
+    @keyframes pulse-dot {
+      0% { box-shadow: 0 0 0 0 rgba(40, 208, 179, 0.5); }
+      70% { box-shadow: 0 0 0 8px rgba(40, 208, 179, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(40, 208, 179, 0); }
+    }
+
+    .btn {
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 15px;
+      padding: 15px 28px;
+      border-radius: var(--radius-md);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.25s var(--ease);
+      cursor: pointer;
+      white-space: nowrap;
+      position: relative;
+      overflow: hidden;
+    }
+    .btn__arrow {
+      transition: transform 0.25s var(--ease);
+      display: inline-block;
+    }
+    .btn:hover .btn__arrow { transform: translateX(4px); }
+
+    .btn--primary {
+      background: var(--bg-dark);
+      color: var(--text-on-dark);
+      box-shadow: 0 2px 0 rgba(0,0,0,0.05), 0 8px 24px rgba(28, 25, 23, 0.12);
+    }
+    .btn--primary:hover {
+      background: #292524;
+      transform: translateY(-2px);
+      box-shadow: 0 2px 0 rgba(0,0,0,0.05), 0 16px 32px rgba(28, 25, 23, 0.18);
+    }
+
+    .btn--secondary {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+    .btn--secondary:hover {
+      background: var(--bg-warm);
+      border-color: var(--text-muted);
+    }
+
+    .btn--dark-primary {
+      background: var(--text-on-dark);
+      color: var(--bg-dark);
+    }
+    .btn--dark-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 32px rgba(250, 250, 249, 0.15);
+    }
+
+    /* ============================================
+       ENTRANCE ANIMATIONS
+       ============================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.08s; }
+    .reveal-delay-2 { transition-delay: 0.16s; }
+    .reveal-delay-3 { transition-delay: 0.24s; }
+    .reveal-delay-4 { transition-delay: 0.32s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    /* ============================================
+       NAVIGATION
+       ============================================ */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: rgba(253, 252, 250, 0.75);
+      backdrop-filter: saturate(140%) blur(16px);
+      -webkit-backdrop-filter: saturate(140%) blur(16px);
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.3s var(--ease), background 0.3s var(--ease), padding 0.3s var(--ease);
+    }
+    .nav.is-scrolled {
+      background: rgba(253, 252, 250, 0.9);
+      border-bottom-color: var(--border);
+    }
+    .nav__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+      transition: padding 0.3s var(--ease);
+    }
+    .nav.is-scrolled .nav__inner { padding: 12px 0; }
+
+    .nav__logo {
+      font-family: var(--font-heading);
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: -0.01em;
+    }
+
+    .nav__links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+    .nav__links a {
+      font-size: 14px;
+      color: var(--text-secondary);
+      transition: color 0.2s;
+      position: relative;
+    }
+    .nav__links a::after {
+      content: '';
+      position: absolute;
+      bottom: -6px; left: 0;
+      width: 0; height: 2px;
+      background: var(--accent);
+      transition: width 0.25s var(--ease);
+    }
+    .nav__links a:hover { color: var(--text); }
+    .nav__links a:hover::after { width: 100%; }
+    .nav__links a.is-active { color: var(--text); }
+    .nav__links a.is-active::after { width: 100%; }
+
+    .nav__cta {
+      font-size: 13px;
+      font-weight: 600;
+      background: var(--bg-dark);
+      color: var(--text-on-dark);
+      padding: 10px 20px;
+      border-radius: var(--radius-md);
+      transition: all 0.2s var(--ease);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .nav__cta:hover {
+      background: #292524;
+      transform: translateY(-1px);
+    }
+
+    .nav__toggle {
+      display: none;
+      padding: 8px;
+      background: none;
+      border: none;
+    }
+    .nav__toggle span {
+      display: block;
+      width: 22px; height: 2px;
+      background: var(--text);
+      margin: 5px 0;
+      border-radius: 2px;
+    }
+
+    /* ============================================
+       BLOG HERO
+       ============================================ */
+    .blog-hero {
+      position: relative;
+      padding: 160px 0 80px;
+      overflow: hidden;
+    }
+    .blog-hero__bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .blog-hero__blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(80px);
+      opacity: 0.5;
+    }
+    .blog-hero__blob--1 {
+      width: 480px; height: 480px;
+      top: -160px; right: -100px;
+      background: radial-gradient(circle at center, rgba(40, 208, 179, 0.4), transparent 60%);
+    }
+    .blog-hero__blob--2 {
+      width: 360px; height: 360px;
+      bottom: -80px; left: -60px;
+      background: radial-gradient(circle at center, rgba(245, 240, 235, 0.9), transparent 70%);
+    }
+    .blog-hero__grid-overlay {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(28, 25, 23, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(28, 25, 23, 0.025) 1px, transparent 1px);
+      background-size: 48px 48px;
+      mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+      -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 80%);
+    }
+    .blog-hero__inner {
+      position: relative;
+      z-index: 2;
+      max-width: 760px;
+    }
+    .blog-hero__label {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .blog-hero__label::before {
+      content: '';
+      width: 24px; height: 1px;
+      background: var(--accent);
+    }
+    .blog-hero__title {
+      font-family: var(--font-heading);
+      font-size: clamp(32px, 4.8vw, 54px);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      color: var(--text);
+      margin-bottom: 24px;
+      text-wrap: balance;
+    }
+    .blog-hero__title-accent {
+      color: var(--accent);
+      position: relative;
+      display: inline-block;
+    }
+    .blog-hero__title-accent::after {
+      content: '';
+      position: absolute;
+      left: 0; bottom: 0.05em;
+      width: 100%; height: 0.08em;
+      background: var(--accent);
+      opacity: 0.25;
+      border-radius: 2px;
+    }
+    .blog-hero__subtitle {
+      font-size: clamp(17px, 1.5vw, 20px);
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+    .blog-hero__subtitle strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* ============================================
+       SECTIONS
+       ============================================ */
+    .section {
+      padding: 80px 0;
+      position: relative;
+    }
+    .section--warm { background: var(--bg-warm); }
+    .section__head {
+      max-width: 760px;
+      margin-bottom: 56px;
+    }
+    .section__label {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section__label::before {
+      content: '';
+      width: 24px; height: 1px;
+      background: var(--accent);
+    }
+    .section__title {
+      font-family: var(--font-heading);
+      font-size: clamp(28px, 3.6vw, 38px);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      margin-bottom: 16px;
+    }
+    .section__subtitle {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+    }
+
+    /* ============================================
+       FEATURED POSTS
+       ============================================ */
+    .featured__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 880px) {
+      .featured__grid { grid-template-columns: 1fr; }
+    }
+
+    .featured-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-2xl);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+    }
+    .featured-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--text-muted);
+      box-shadow: var(--shadow-lg);
+    }
+    .featured-card__image {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: var(--bg-warm);
+      overflow: hidden;
+    }
+    .featured-card__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s var(--ease);
+    }
+    .featured-card:hover .featured-card__image img { transform: scale(1.04); }
+    .featured-card__image--placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--bg-warm) 0%, var(--accent-soft) 100%);
+      color: var(--accent);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 64px;
+      letter-spacing: -0.04em;
+    }
+    .featured-card__body {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+    }
+    .featured-card__meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      flex-wrap: wrap;
+    }
+    .featured-card__title {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+      color: var(--text);
+      text-wrap: balance;
+    }
+    .featured-card__excerpt {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .featured-card__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: auto;
+      padding-top: 6px;
+    }
+    .featured-card__readmore {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.25s var(--ease);
+    }
+    .featured-card:hover .featured-card__readmore { gap: 10px; }
+    .featured-card__tag {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 4px 10px;
+      border-radius: var(--radius-full);
+    }
+
+    /* ============================================
+       LATEST POSTS GRID
+       ============================================ */
+    .posts__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 1080px) {
+      .posts__grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .posts__grid { grid-template-columns: 1fr; }
+    }
+
+    .post-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.3s var(--ease), transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+    }
+    .post-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--text-muted);
+      box-shadow: var(--shadow-md);
+    }
+    .post-card__image {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: var(--bg-warm);
+      overflow: hidden;
+    }
+    .post-card__image img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s var(--ease);
+    }
+    .post-card:hover .post-card__image img { transform: scale(1.04); }
+    .post-card__image--placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--bg-warm) 0%, var(--accent-soft) 100%);
+      color: var(--accent);
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 48px;
+      letter-spacing: -0.04em;
+    }
+    .post-card__body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      flex: 1;
+    }
+    .post-card__meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      color: var(--text-muted);
+      font-weight: 500;
+      letter-spacing: 0.02em;
+    }
+    .post-card__title {
+      font-family: var(--font-heading);
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+      color: var(--text);
+    }
+    .post-card__excerpt {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .post-card__readmore {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: auto;
+      padding-top: 4px;
+      transition: gap 0.25s var(--ease);
+    }
+    .post-card:hover .post-card__readmore { gap: 10px; }
+
+    /* ============================================
+       LOADING / EMPTY / ERROR STATES
+       ============================================ */
+    .posts-state {
+      padding: 60px 24px;
+      text-align: center;
+      color: var(--text-secondary);
+      background: var(--bg-card);
+      border: 1px dashed var(--border);
+      border-radius: var(--radius-xl);
+    }
+    .posts-state__title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .posts-state__text { font-size: 14px; max-width: 480px; margin: 0 auto; }
+
+    /* ============================================
+       ÄLTERE BEITRÄGE (Link zum bisherigen Blog)
+       ============================================ */
+    .older-posts {
+      margin-top: 48px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .older-posts__text { font-size: 14px; color: var(--text-secondary); }
+    .older-posts__link {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.25s var(--ease);
+    }
+    .older-posts__link:hover { gap: 10px; }
+
+    .skeleton-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+    }
+    .skeleton-card__img {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: linear-gradient(90deg, var(--bg-warm) 0%, #ECE7E1 50%, var(--bg-warm) 100%);
+      background-size: 200% 100%;
+      animation: shimmer 1.6s infinite linear;
+    }
+    .skeleton-card__body { padding: 22px; }
+    .skeleton-card__line {
+      height: 14px;
+      background: linear-gradient(90deg, var(--bg-warm) 0%, #ECE7E1 50%, var(--bg-warm) 100%);
+      background-size: 200% 100%;
+      animation: shimmer 1.6s infinite linear;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .skeleton-card__line--short { width: 60%; }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* ============================================
+       FINAL CTA — NEWSLETTER
+       ============================================ */
+    .final-cta {
+      background: var(--bg-dark);
+      color: var(--text-on-dark);
+      padding: 110px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .final-cta__glow {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 700px; height: 700px;
+      background: radial-gradient(circle, rgba(40, 208, 179, 0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .final-cta__inner {
+      position: relative;
+      z-index: 1;
+      max-width: 720px;
+      text-align: center;
+    }
+    .final-cta__title {
+      font-family: var(--font-heading);
+      font-size: clamp(28px, 3.4vw, 40px);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+      margin-bottom: 18px;
+      color: var(--text-on-dark);
+    }
+    .final-cta__text {
+      font-size: 17px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .newsletter-form {
+      display: flex;
+      gap: 10px;
+      max-width: 520px;
+      margin: 0 auto 18px;
+      flex-wrap: wrap;
+    }
+    .newsletter-form__input {
+      flex: 1;
+      min-width: 220px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      padding: 15px 20px;
+      background: var(--bg-dark-card);
+      border: 1px solid var(--border-dark);
+      color: var(--text-on-dark);
+      border-radius: var(--radius-md);
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .newsletter-form__input::placeholder { color: var(--text-muted); }
+    .newsletter-form__input:focus {
+      border-color: var(--accent);
+      background: #2C2826;
+    }
+    .newsletter-form__submit { white-space: nowrap; }
+    .newsletter-form__note {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+    .final-cta__sub {
+      margin-top: 32px;
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .final-cta__sub-link {
+      color: var(--accent);
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .final-cta__sub-link:hover { color: var(--accent-bright); }
+    .final-cta__sub-divider { opacity: 0.4; }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .footer {
+      background: var(--bg);
+      padding: 64px 0 40px;
+      border-top: 1px solid var(--border);
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 56px;
+      margin-bottom: 48px;
+    }
+    .footer__brand {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+    .footer__tagline {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      max-width: 380px;
+    }
+    .footer__heading {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .footer__links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .footer__links a {
+      font-size: 14px;
+      color: var(--text-secondary);
+      transition: color 0.2s;
+    }
+    .footer__links a:hover { color: var(--text); }
+    .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 880px) {
+      .blog-hero { padding: 130px 0 60px; }
+      .section { padding: 60px 0; }
+    }
+    @media (max-width: 640px) {
+      .nav__links, .nav__cta { display: none; }
+      .nav__toggle { display: block; }
+      .footer__grid { grid-template-columns: 1fr; gap: 32px; }
+      .footer__bottom { flex-direction: column; align-items: flex-start; gap: 12px; }
+    }
+  </style>
+  <link rel="stylesheet" href="/css/cookie-consent.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo">
+          <span>belal kayumi</span>
+        </a>
+        <nav>
+          <ul class="nav__links">
+            <li><a href="/#ki-sichtbarkeit">KI-Sichtbarkeit</a></li>
+            <li><a href="/vier-saeulen-ki-sichtbarkeit">Strategie</a></li>
+            <li><a href="/#ueber-mich">Über mich</a></li>
+            <li><a href="/#lernlabor">Praxis</a></li>
+            <li><a href="/blog" class="is-active">Blog</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <a href="#newsletter" class="nav__cta">
+          Newsletter <span aria-hidden="true">→</span>
+        </a>
+        <button class="nav__toggle" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="blog-hero">
+      <div class="blog-hero__bg" aria-hidden="true">
+        <div class="blog-hero__blob blog-hero__blob--1"></div>
+        <div class="blog-hero__blob blog-hero__blob--2"></div>
+        <div class="blog-hero__grid-overlay"></div>
+      </div>
+      <div class="container blog-hero__inner">
+        <span class="blog-hero__label reveal">Blog</span>
+        <h1 class="blog-hero__title reveal reveal-delay-1">
+          Forschung, Tools und Praxis zu <span class="blog-hero__title-accent">KI-Sichtbarkeit</span>.
+        </h1>
+        <p class="blog-hero__subtitle reveal reveal-delay-2">
+          Beobachtungen aus meiner täglichen Arbeit — was sich in <strong>ChatGPT, Perplexity, Claude und Google AI Overviews</strong> verschiebt, welche Hebel funktionieren und welche nicht.
+        </p>
+      </div>
+    </section>
+
+    <!-- ALLE BEITRÄGE (statisch — keine externe API, GEO-clean) -->
+    <section class="section section--warm" id="aktuell" aria-labelledby="latest-title">
+      <div class="container">
+        <div class="section__head">
+          <span class="section__label reveal">Aktuell</span>
+          <h2 class="section__title reveal reveal-delay-1" id="latest-title">Alle Beiträge</h2>
+          <p class="section__subtitle reveal reveal-delay-2">
+            Beobachtungen, Analysen und Tools rund um GEO und KI-Sichtbarkeit — neue Beiträge erscheinen hier zuerst.
+          </p>
+        </div>
+
+        <div class="posts__grid" id="posts-grid">
+          <!-- BLOG_POSTS:START — neue Beiträge als <a class="post-card reveal" href="/blog/<slug>"> hier einfügen, neueste zuerst -->
+          <a class="post-card reveal" href="/blog/geo-vs-seo">
+            <div class="post-card__image">
+              <img src="https://images.unsplash.com/photo-1762330470070-249e7c23c8c0?auto=format&fit=crop&w=800&h=450&q=70" alt="Nahaufnahme einer KI-Eingabemaske mit dem Hinweis „Ask anything“" loading="lazy" />
+            </div>
+            <div class="post-card__body">
+              <div class="post-card__meta"><span>21. Mai 2026</span></div>
+              <h3 class="post-card__title">GEO vs. SEO: Unterschied, Überschneidung — und warum SEO allein nicht reicht</h3>
+              <p class="post-card__excerpt">Wo SEO aufhört und GEO anfängt: Sichtbarkeit in den Antworten von ChatGPT, Perplexity und Google AI Overviews — und warum du beides zusammen denken musst.</p>
+              <span class="post-card__readmore">Lesen <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+          <a class="post-card reveal" href="/blog/was-ist-generative-engine-optimization-geo">
+            <div class="post-card__image">
+              <img src="https://images.unsplash.com/photo-1599413955192-1d5eb8099a9c?auto=format&fit=crop&w=800&h=450&crop=top&q=70" alt="Person im weißen Hemd tippt an einer schwarzen Computertastatur" loading="lazy" />
+            </div>
+            <div class="post-card__body">
+              <div class="post-card__meta"><span>21. Mai 2026</span></div>
+              <h3 class="post-card__title">Was ist Generative Engine Optimization (GEO)? Ein praxisnaher Leitfaden für B2B</h3>
+              <p class="post-card__excerpt">Wie KI-Systeme wie ChatGPT, Perplexity und Google AI Overviews dein B2B-Unternehmen als Quelle zitieren — und was du dafür konkret tun musst.</p>
+              <span class="post-card__readmore">Lesen <span aria-hidden="true">→</span></span>
+            </div>
+          </a>
+          <!-- BLOG_POSTS:END -->
+        </div>
+
+        <!-- Ältere Beiträge liegen noch im bisherigen Ghost-Blog -->
+        <div class="older-posts reveal">
+          <p class="older-posts__text">Ältere Beiträge findest du vorerst im bisherigen Blog.</p>
+          <a class="older-posts__link" href="https://blog.belalkayumi.com" target="_blank" rel="noopener">
+            Zum bisherigen Blog <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA — NEWSLETTER -->
+    <section class="final-cta" id="newsletter">
+      <div class="final-cta__glow" aria-hidden="true"></div>
+      <div class="container final-cta__inner">
+        <span class="section__label reveal" style="justify-content: center; color: var(--accent);">Newsletter</span>
+        <h2 class="final-cta__title reveal reveal-delay-1">Lies mit, bevor deine Wettbewerber es tun.</h2>
+        <p class="final-cta__text reveal reveal-delay-2">
+          Ein- bis zweimal im Monat fasse ich zusammen, was sich in der KI-Suche im DACH-Raum gerade verschiebt. Welche Quellen ChatGPT und Perplexity neu zitieren, welche Methoden funktionieren, welche Marken sichtbar werden — und welche unsichtbar bleiben.
+        </p>
+
+        <form class="newsletter-form reveal reveal-delay-3" id="newsletter-form" novalidate>
+          <input type="email" required placeholder="deine@email.de" name="email" class="newsletter-form__input" aria-label="E-Mail-Adresse" />
+          <button type="submit" class="btn btn--dark-primary newsletter-form__submit">
+            <span class="newsletter-form__btn-text">Newsletter abonnieren</span>
+            <span class="btn__arrow">→</span>
+          </button>
+        </form>
+
+        <p class="newsletter-form__note reveal reveal-delay-4" id="newsletter-note">
+          Du bekommst eine E-Mail zur Bestätigung. Kein Spam, jederzeit abbestellbar.
+        </p>
+
+        <div class="final-cta__sub reveal reveal-delay-4">
+          <span>Lieber direkt austauschen?</span>
+          <a href="https://www.linkedin.com/in/belalkayumi/" target="_blank" rel="noopener" class="final-cta__sub-link">
+            Auf LinkedIn vernetzen →
+          </a>
+          <span class="final-cta__sub-divider" aria-hidden="true">·</span>
+          <a href="mailto:hello@belalkayumi.com" class="final-cta__sub-link">
+            E-Mail schreiben →
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">belal kayumi</div>
+          <p class="footer__tagline">
+            Eine der ersten deutschsprachigen Stimmen zu Generative Engine Optimization (GEO) und KI-Sichtbarkeit. Damit dein Unternehmen genannt wird, wenn die KI antwortet.
+          </p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <ul class="footer__links">
+            <li><a href="/#ki-sichtbarkeit">KI-Sichtbarkeit</a></li>
+            <li><a href="/vier-saeulen-ki-sichtbarkeit">Strategie</a></li>
+            <li><a href="/#ueber-mich">Über mich</a></li>
+            <li><a href="/#lernlabor">Praxis</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Kontakt</div>
+          <ul class="footer__links">
+            <li><a href="https://www.linkedin.com/in/belalkayumi/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:hello@belalkayumi.com">E-Mail</a></li>
+            <li><a href="https://rlvnt.ai" target="_blank" rel="noopener">RLVNT.AI</a></li>
+            <li><a href="/impressum">Impressum</a></li>
+            <li><a href="/datenschutz">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div>© 2026 Belal Kayumi. Alle Rechte vorbehalten.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Newsletter läuft über Brevo (Cloudflare Worker) — siehe Newsletter-Handler unten.
+
+    // ============================================
+    // SCROLL REVEAL (IntersectionObserver)
+    // ============================================
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ============================================
+    // NAV SCROLL STATE
+    // ============================================
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) nav.classList.add('is-scrolled');
+      else nav.classList.remove('is-scrolled');
+    }, { passive: true });
+
+    // ============================================
+    // SMOOTH ANCHOR SCROLL (in-page only)
+    // ============================================
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#' || !targetId) return;
+        const target = document.querySelector(targetId);
+        if (!target) return;
+        e.preventDefault();
+        const offset = target.getBoundingClientRect().top + window.scrollY - nav.offsetHeight - 12;
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+      });
+    });
+
+    // ============================================
+    // MOBILE NAV TOGGLE
+    // ============================================
+    const navToggle = document.querySelector('.nav__toggle');
+    const navLinks = document.querySelector('.nav__links');
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        const visible = navLinks.style.display === 'flex';
+        navLinks.style.display = visible ? 'none' : 'flex';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = '100%';
+        navLinks.style.left = '0';
+        navLinks.style.right = '0';
+        navLinks.style.padding = '20px 24px';
+        navLinks.style.background = 'var(--bg)';
+        navLinks.style.borderBottom = '1px solid var(--border)';
+        navLinks.style.gap = '16px';
+      });
+    }
+
+    // ============================================
+    // NEWSLETTER → GHOST API (gleiches Pattern wie auf der Homepage)
+    // ============================================
+    const newsletterForm = document.getElementById('newsletter-form');
+    const newsletterNote = document.getElementById('newsletter-note');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const button = newsletterForm.querySelector('button');
+        const btnText = newsletterForm.querySelector('.newsletter-form__btn-text');
+        const arrow = newsletterForm.querySelector('.btn__arrow');
+        const input = newsletterForm.querySelector('input[type=email]');
+        const email = input.value.trim();
+
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          input.focus();
+          return;
+        }
+
+        button.disabled = true;
+        btnText.textContent = 'Wird gesendet…';
+        if (arrow) arrow.style.display = 'none';
+
+        try {
+          const response = await fetch('https://brevo-doi.b-kayumi.workers.dev/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, company: '' })
+          });
+
+          if (response.ok) {
+            btnText.textContent = 'Bestätigung gesendet ✓';
+            input.value = '';
+            input.disabled = true;
+            if (newsletterNote) {
+              newsletterNote.innerHTML = '<strong>Letzter Schritt:</strong> Bitte klick den Bestätigungs-Link in deiner E-Mail.';
+            }
+          } else {
+            btnText.textContent = 'Fehler — bitte erneut versuchen';
+            button.disabled = false;
+            if (arrow) arrow.style.display = '';
+            setTimeout(() => { btnText.textContent = 'Newsletter abonnieren'; }, 4000);
+          }
+        } catch (error) {
+          btnText.textContent = 'Verbindungsfehler';
+          button.disabled = false;
+          if (arrow) arrow.style.display = '';
+          setTimeout(() => { btnText.textContent = 'Newsletter abonnieren'; }, 4000);
+        }
+      });
+    }
+  </script>
+
+
+<!-- Cookie Banner -->
+<div id="ck-overlay" role="dialog" aria-modal="true" aria-labelledby="ck-title" style="display:none;">
+  <div id="ck-banner">
+    <div class="ck-stripe"></div>
+    <div class="ck-body">
+      <p class="ck-title" id="ck-title">Datenschutz-Einstellungen</p>
+      <p class="ck-text">Wir nutzen Cookies für anonyme Analyse (Google Analytics). <a href="/datenschutz" target="_blank">Datenschutzerklärung</a></p>
+
+      <div class="ck-categories" id="ck-categories" hidden>
+        <div class="ck-category">
+          <div class="ck-cat-info">
+            <div class="ck-cat-name">Notwendige Cookies</div>
+            <div class="ck-cat-desc">Session, Sicherheit — immer aktiv</div>
+          </div>
+          <div class="ck-cat-right">
+            <label class="ck-toggle"><input type="checkbox" checked disabled><span class="ck-slider"></span></label>
+            <span class="ck-required-label">Immer aktiv</span>
+          </div>
+        </div>
+        <div class="ck-category">
+          <div class="ck-cat-info">
+            <div class="ck-cat-name">Analyse-Cookies</div>
+            <div class="ck-cat-desc">Google Analytics (GA4) — anonym, keine Weitergabe</div>
+          </div>
+          <label class="ck-toggle"><input type="checkbox" id="ck-analytics" aria-label="Analyse-Cookies erlauben"><span class="ck-slider"></span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="ck-actions">
+      <button class="ck-btn ck-btn-reject" onclick="CookieConsent.rejectAll()">Ablehnen</button>
+      <button class="ck-btn ck-btn-save" id="ck-save-btn" style="display:none" onclick="CookieConsent.saveSelection()">Speichern</button>
+      <button class="ck-btn ck-btn-accept" onclick="CookieConsent.acceptAll()">Alle akzeptieren</button>
+    </div>
+
+    <div class="ck-footer">
+      <button class="ck-details-toggle" aria-expanded="false" onclick="CookieConsent.toggleDetails(this)">
+        Einstellungen anpassen <span class="ck-chevron">▼</span>
+      </button>
+    </div>
+  </div>
+</div>
+<button id="ck-revoke-btn" onclick="CookieConsent.showSettings()">Cookie-Einstellungen</button>
+<script src="/js/cookie-consent.js"></script>
+
+</body>
+</html>

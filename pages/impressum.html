@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum — Belal Kayumi</title>
+  <meta name="description" content="Impressum von belalkayumi.com — Angaben gemäß § 5 DDG, redaktionell Verantwortlicher nach § 18 Abs. 2 MStV, Hinweise zu Haftung und Urheberrecht.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://belalkayumi.com/impressum/">
+  <link rel="alternate" hreflang="de" href="https://belalkayumi.com/impressum/">
+  <link rel="alternate" hreflang="x-default" href="https://belalkayumi.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1C1917">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Impressum — Belal Kayumi">
+  <meta property="og:description" content="Anbieterkennzeichnung gemäß § 5 DDG für belalkayumi.com.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://belalkayumi.com/impressum/">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Belal Kayumi">
+
+  <!-- Fonts (local hosting — DSGVO-konform, kein externer Request) -->
+  <link rel="preload" as="font" type="font/woff2" href="fonts/inter-400.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/bricolage-grotesque-700.woff2" crossorigin>
+
+  <style>
+    /* ============================================
+       FONTS (local — DSGVO-konform)
+       ============================================ */
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/bricolage-grotesque-400.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/bricolage-grotesque-600.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/bricolage-grotesque-700.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('fonts/inter-400.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url('fonts/inter-500.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('fonts/inter-600.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('fonts/inter-700.woff2') format('woff2'); }
+
+    /* ============================================
+       RESET & BASE
+       ============================================ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #FDFCFA;
+      --bg-warm: #F5F0EB;
+      --bg-card: #FFFFFF;
+      --bg-dark: #1C1917;
+      --bg-dark-card: #292524;
+      --accent: #28D0B3;
+      --accent-hover: #1FA893;
+      --accent-soft: #ECFDF8;
+      --text: #1C1917;
+      --text-secondary: #57534E;
+      --text-muted: #A8A29E;
+      --text-on-dark: #FAFAF9;
+      --border: #E7E5E4;
+      --border-dark: #3D3835;
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 14px;
+      --radius-full: 999px;
+      --font-heading: 'Bricolage Grotesque', system-ui, sans-serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --shadow-sm: 0 1px 2px rgba(28, 25, 23, 0.04);
+      --shadow-md: 0 4px 20px rgba(28, 25, 23, 0.06);
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    ::selection { background: var(--accent); color: var(--bg-dark); }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+
+    /* ============================================
+       UTILITIES
+       ============================================ */
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+    .container-narrow { max-width: 820px; margin: 0 auto; padding: 0 24px; }
+
+    .pill {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .pill--teal { color: var(--accent); background: var(--accent-soft); }
+    .pill--teal::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    /* ============================================
+       NAV
+       ============================================ */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(253, 252, 250, 0.85);
+      backdrop-filter: saturate(160%) blur(12px);
+      -webkit-backdrop-filter: saturate(160%) blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+      gap: 24px;
+    }
+    .nav__logo {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: -0.01em;
+    }
+    .nav__links {
+      list-style: none;
+      display: flex;
+      gap: 28px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+    .nav__links a:hover { color: var(--text); }
+    .nav__cta {
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: var(--radius-full);
+      background: var(--bg-dark);
+      color: var(--text-on-dark);
+      transition: background 0.2s var(--ease);
+    }
+    .nav__cta:hover { background: var(--accent); color: var(--bg-dark); }
+    @media (max-width: 860px) {
+      .nav__links { display: none; }
+    }
+
+    /* ============================================
+       PAGE HEADER
+       ============================================ */
+    .page-header {
+      padding: 80px 0 48px;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(40, 208, 179, 0.08), transparent 50%),
+        var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+    .page-header__pill { margin-bottom: 24px; }
+    .page-header__title {
+      font-family: var(--font-heading);
+      font-size: clamp(30px, 6.4vw, 56px);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      hyphens: auto;
+      -webkit-hyphens: auto;
+    }
+    .page-header__lead {
+      color: var(--text-secondary);
+      font-size: 18px;
+      max-width: 640px;
+    }
+    .page-header__meta {
+      margin-top: 28px;
+      display: inline-flex;
+      gap: 18px;
+      font-size: 13px;
+      color: var(--text-muted);
+      letter-spacing: 0.02em;
+    }
+    .page-header__meta strong {
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+
+    /* ============================================
+       PROSE
+       ============================================ */
+    .prose {
+      padding: 64px 0 96px;
+    }
+    .prose h2 {
+      font-family: var(--font-heading);
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin: 56px 0 18px;
+      scroll-margin-top: 100px;
+    }
+    .prose h2:first-of-type { margin-top: 0; }
+    .prose h3 {
+      font-family: var(--font-heading);
+      font-size: 19px;
+      font-weight: 600;
+      letter-spacing: -0.005em;
+      margin: 36px 0 12px;
+      color: var(--text);
+    }
+    .prose p {
+      font-size: 16.5px;
+      color: var(--text-secondary);
+      margin: 0 0 16px;
+    }
+    .prose strong { color: var(--text); font-weight: 600; }
+    .prose a {
+      color: var(--accent-hover);
+      border-bottom: 1px solid rgba(40, 208, 179, 0.35);
+      transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
+    }
+    .prose a:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .prose .anschrift {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px 26px;
+      margin: 14px 0 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .prose .anschrift p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.7;
+      word-wrap: break-word;
+    }
+    .prose .anschrift .name {
+      color: var(--text);
+      font-weight: 600;
+      font-size: 17px;
+      margin-bottom: 2px;
+    }
+    .prose .anschrift .gap-top { margin-top: 10px; }
+
+    /* ============================================
+       FOOTER
+       ============================================ */
+    .footer {
+      background: var(--bg-dark);
+      color: var(--text-on-dark);
+      padding: 64px 0 32px;
+    }
+    .footer__grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+    .footer__brand {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+    .footer__tagline {
+      color: rgba(250, 250, 249, 0.65);
+      font-size: 14.5px;
+      max-width: 360px;
+      line-height: 1.6;
+    }
+    .footer__heading {
+      font-family: var(--font-heading);
+      font-weight: 600;
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(250, 250, 249, 0.55);
+      margin-bottom: 16px;
+    }
+    .footer__links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 14.5px;
+      color: rgba(250, 250, 249, 0.85);
+    }
+    .footer__links a { transition: color 0.2s var(--ease); }
+    .footer__links a:hover { color: var(--accent); }
+    .footer__bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 24px;
+      border-top: 1px solid var(--border-dark);
+      font-size: 13px;
+      color: rgba(250, 250, 249, 0.5);
+    }
+    @media (max-width: 880px) {
+      .footer__grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 560px) {
+      .footer__grid { grid-template-columns: 1fr; }
+      .footer__bottom { flex-direction: column; align-items: flex-start; gap: 8px; }
+    }
+
+    /* ============================================
+       FOCUS
+       ============================================ */
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    /* ============================================
+       MOBILE OPTIMIZATION
+       ============================================ */
+    @media (max-width: 720px) {
+      .container,
+      .container-narrow { padding: 0 20px; }
+
+      .nav__inner { padding: 14px 0; gap: 12px; }
+      .nav__logo { font-size: 18px; }
+      .nav__cta { padding: 9px 14px; font-size: 13px; }
+
+      .page-header { padding: 56px 0 36px; }
+      .page-header__pill { margin-bottom: 18px; }
+      .page-header__title {
+        font-size: clamp(28px, 8.5vw, 38px);
+        letter-spacing: -0.015em;
+        line-height: 1.12;
+      }
+      .page-header__lead { font-size: 16px; }
+      .page-header__meta {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        margin-top: 22px;
+      }
+
+      .prose { padding: 44px 0 72px; }
+      .prose h2 { font-size: 23px; margin: 44px 0 14px; }
+      .prose h3 { font-size: 17px; margin: 30px 0 10px; }
+      .prose p { font-size: 16px; }
+      .prose .anschrift { padding: 20px 22px; }
+      .prose .anschrift .name { font-size: 16px; }
+
+      .footer { padding: 48px 0 28px; }
+      .footer__grid { gap: 36px; margin-bottom: 36px; }
+      .footer__brand { font-size: 20px; }
+    }
+
+    @media (max-width: 400px) {
+      .page-header__title { font-size: 26px; }
+      .nav__cta span { display: none; }
+    }
+  </style>
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Impressum",
+    "url": "https://belalkayumi.com/impressum/",
+    "inLanguage": "de",
+    "isPartOf": {
+      "@type": "WebSite",
+      "url": "https://belalkayumi.com",
+      "name": "Belal Kayumi — GEO & KI-Sichtbarkeit"
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "Anbieterkennzeichnung gemäß § 5 DDG"
+    },
+    "dateModified": "2026-05-06"
+  }
+  </script>
+  <link rel="stylesheet" href="/css/cookie-consent.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="/" class="nav__logo">belal kayumi</a>
+        <nav>
+          <ul class="nav__links">
+            <li><a href="/#ki-sichtbarkeit">KI-Sichtbarkeit</a></li>
+            <li><a href="/vier-saeulen-ki-sichtbarkeit">Strategie</a></li>
+            <li><a href="/#ueber-mich">Über mich</a></li>
+            <li><a href="/#lernlabor">Praxis</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+          </ul>
+        </nav>
+        <a href="/#newsletter" class="nav__cta">Newsletter <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+      <div class="container-narrow">
+        <span class="pill pill--teal page-header__pill">Impressum</span>
+        <h1 class="page-header__title">Impressum</h1>
+        <p class="page-header__lead">
+          Anbieterkennzeichnung gemäß § 5 DDG sowie redaktionelle Verantwortlichkeit nach § 18 Abs. 2 MStV für belalkayumi.com.
+        </p>
+        <div class="page-header__meta">
+          <span><strong>Stand:</strong> 6. Mai 2026</span>
+          <span><strong>Geltungsbereich:</strong> belalkayumi.com</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROSE -->
+    <article class="prose">
+      <div class="container-narrow">
+
+        <h2 id="angaben">1. Angaben gemäß § 5 DDG</h2>
+        <div class="anschrift">
+          <p class="name">Belal Kayumi</p>
+          <p>Rehrbrinkstrasse 22</p>
+          <p>30890 Barsinghausen</p>
+          <p>Deutschland</p>
+        </div>
+
+        <h2 id="kontakt">2. Kontakt</h2>
+        <p>
+          E-Mail: <a href="mailto:hello@belalkayumi.com">hello@belalkayumi.com</a><br>
+          Website: <a href="https://belalkayumi.com">belalkayumi.com</a>
+        </p>
+        <p>Eine schnelle elektronische Kontaktaufnahme ist über die oben genannte E-Mail-Adresse möglich. Anfragen werden in der Regel innerhalb weniger Werktage beantwortet.</p>
+
+        <h2 id="redaktionell">3. Redaktionell verantwortlich nach § 18 Abs. 2 MStV</h2>
+        <p>Verantwortlich für die journalistisch-redaktionellen Inhalte auf belalkayumi.com und blog.belalkayumi.com:</p>
+        <div class="anschrift">
+          <p class="name">Belal Kayumi</p>
+          <p>Rehrbrinkstrasse 22</p>
+          <p>30890 Barsinghausen</p>
+          <p>Deutschland</p>
+        </div>
+
+        <h2 id="eu-streitschlichtung">4. EU-Streitschlichtung</h2>
+        <p>Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die du unter <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">ec.europa.eu/consumers/odr</a> findest. Meine E-Mail-Adresse ist oben im Impressum genannt.</p>
+
+        <h2 id="verbraucherstreitbeilegung">5. Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2>
+        <p>Ich bin nicht bereit oder verpflichtet, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+
+        <h2 id="haftung-inhalte">6. Haftung für Inhalte</h2>
+        <p>Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.</p>
+        <p>Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.</p>
+
+        <h2 id="haftung-links">7. Haftung für Links</h2>
+        <p>Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+        <p>Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.</p>
+
+        <h2 id="urheberrecht">8. Urheberrecht</h2>
+        <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+        <p>Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Solltest du trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Inhalte umgehend entfernen.</p>
+
+      </div>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">belal kayumi</div>
+          <p class="footer__tagline">
+            Eine der ersten deutschsprachigen Stimmen zu Generative Engine Optimization (GEO) und KI-Sichtbarkeit. Damit dein Unternehmen genannt wird, wenn die KI antwortet.
+          </p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <ul class="footer__links">
+            <li><a href="/#ki-sichtbarkeit">KI-Sichtbarkeit</a></li>
+            <li><a href="/vier-saeulen-ki-sichtbarkeit">Strategie</a></li>
+            <li><a href="/#ueber-mich">Über mich</a></li>
+            <li><a href="/#lernlabor">Praxis</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Kontakt</div>
+          <ul class="footer__links">
+            <li><a href="https://www.linkedin.com/in/belalkayumi/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:hello@belalkayumi.com">E-Mail</a></li>
+            <li><a href="https://rlvnt.ai" target="_blank" rel="noopener">RLVNT.AI</a></li>
+            <li><a href="/impressum">Impressum</a></li>
+            <li><a href="/datenschutz">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div>© 2026 Belal Kayumi. Alle Rechte vorbehalten.</div>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- Cookie Banner -->
+<div id="ck-overlay" role="dialog" aria-modal="true" aria-labelledby="ck-title" style="display:none;">
+  <div id="ck-banner">
+    <div class="ck-stripe"></div>
+    <div class="ck-body">
+      <p class="ck-title" id="ck-title">Datenschutz-Einstellungen</p>
+      <p class="ck-text">Wir nutzen Cookies für anonyme Analyse (Google Analytics). <a href="/datenschutz" target="_blank">Datenschutzerklärung</a></p>
+
+      <div class="ck-categories" id="ck-categories" hidden>
+        <div class="ck-category">
+          <div class="ck-cat-info">
+            <div class="ck-cat-name">Notwendige Cookies</div>
+            <div class="ck-cat-desc">Session, Sicherheit — immer aktiv</div>
+          </div>
+          <div class="ck-cat-right">
+            <label class="ck-toggle"><input type="checkbox" checked disabled><span class="ck-slider"></span></label>
+            <span class="ck-required-label">Immer aktiv</span>
+          </div>
+        </div>
+        <div class="ck-category">
+          <div class="ck-cat-info">
+            <div class="ck-cat-name">Analyse-Cookies</div>
+            <div class="ck-cat-desc">Google Analytics (GA4) — anonym, keine Weitergabe</div>
+          </div>
+          <label class="ck-toggle"><input type="checkbox" id="ck-analytics" aria-label="Analyse-Cookies erlauben"><span class="ck-slider"></span></label>
+        </div>
+      </div>
+    </div>
+
+    <div class="ck-actions">
+      <button class="ck-btn ck-btn-reject" onclick="CookieConsent.rejectAll()">Ablehnen</button>
+      <button class="ck-btn ck-btn-save" id="ck-save-btn" style="display:none" onclick="CookieConsent.saveSelection()">Speichern</button>
+      <button class="ck-btn ck-btn-accept" onclick="CookieConsent.acceptAll()">Alle akzeptieren</button>
+    </div>
+
+    <div class="ck-footer">
+      <button class="ck-details-toggle" aria-expanded="false" onclick="CookieConsent.toggleDetails(this)">
+        Einstellungen anpassen <span class="ck-chevron">▼</span>
+      </button>
+    </div>
+  </div>
+</div>
+<button id="ck-revoke-btn" onclick="CookieConsent.showSettings()">Cookie-Einstellungen</button>
+<script src="/js/cookie-consent.js"></script>
+
+</body>
+</html>

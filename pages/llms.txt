@@ -1,0 +1,31 @@
+# Belal Kayumi
+
+> Belal Kayumi ist einer der ersten deutschsprachigen Praktiker für Generative Engine Optimization (GEO) und KI-Sichtbarkeit. Bei RLVNT.AI analysiert er täglich, wie Marken in ChatGPT, Perplexity, Claude und Google AI Overviews zitiert werden. Dozent für Digital Marketing an der Leibniz FH Hannover, Co-Autor des GEO-Leitfadens im PR Report.
+
+## Hauptseiten
+- [Startseite](https://belalkayumi.com/): Positionierung, Strategie und Praxis zu GEO und KI-Sichtbarkeit im DACH-Raum.
+- [Blog](https://belalkayumi.com/blog): Artikel und Analysen zu GEO, KI-Suche und Content-Strategie.
+
+## Blog-Beiträge
+- [GEO vs. SEO: Was ist der Unterschied?](https://belalkayumi.com/blog/geo-vs-seo): Unterschiede und Überschneidungen von Generative Engine Optimization und klassischem SEO — und warum SEO allein nicht mehr reicht, wenn ChatGPT, Perplexity und Google AI Overviews antworten.
+- [Was ist Generative Engine Optimization (GEO)?](https://belalkayumi.com/blog/was-ist-generative-engine-optimization-geo): Praxisnaher GEO-Leitfaden für B2B-Unternehmen im DACH-Raum — Definition, GEO vs. SEO vs. AEO, die wichtigsten Maßnahmen und wie man die eigene KI-Sichtbarkeit prüft.
+
+## GEO-Lexikon (Glossar)
+- [GEO-Lexikon](https://belalkayumi.com/geo-lexikon): Deutschsprachiges Glossar zu den Themen AI Search, KI-Sichtbarkeit und Generative Engine Optimization — mit Definition, Belals Perspektive und Praxisbeispiel. 10 Einträge, kontinuierlich wachsend.
+- [Generative Engine Optimization (GEO)](https://belalkayumi.com/geo-lexikon/geo): Gezielte Optimierung von Inhalten, damit Marken in KI-generierten Antworten sichtbar werden und als Quellen zitiert werden.
+- [Vendor-Selection-Prompt](https://belalkayumi.com/geo-lexikon/vendor-selection-prompt): KI-Suchanfrage mit direktem kommerziellem Charakter — Nutzer sucht aktiv nach einem Anbieter, einer Agentur oder einem Dienstleister. Belals IP-Begriff.
+- [Informations-Prompt](https://belalkayumi.com/geo-lexikon/informations-prompt): KI-Suchanfrage, bei der ein Nutzer ein Thema verstehen möchte — ohne unmittelbar nach einem Anbieter zu suchen. Belals IP-Begriff.
+- [KI-Sichtbarkeit](https://belalkayumi.com/geo-lexikon/ki-sichtbarkeit): Wie präsent eine Marke in den Antworten generativer KI-Systeme ist — gemessen an Erwähnungen, Zitierungen und Kontext.
+- [Entity](https://belalkayumi.com/geo-lexikon/entity): Eindeutig identifizierbares Objekt im Wissensnetz eines Sprachmodells — Person, Organisation, Ort oder Konzept.
+- [Citation](https://belalkayumi.com/geo-lexikon/citation): Namentliche Erwähnung oder Verlinkung einer Quelle in einer KI-generierten Antwort — das primäre Sichtbarkeitssignal im AI Search.
+- [Co-Citation](https://belalkayumi.com/geo-lexikon/co-citation): Wiederholtes gemeinsames Auftreten einer Marke mit bestimmten Themen in KI-Antworten — zentrales Assoziationssignal für LLMs.
+- [AI Search](https://belalkayumi.com/geo-lexikon/ai-search): Suchsysteme auf LLM-Basis, die Anfragen mit synthetisierten Antworten beantworten — statt klassischer Linklisten.
+- [llms.txt](https://belalkayumi.com/geo-lexikon/llms-txt): Textdatei im Root-Verzeichnis einer Website, die KI-Systemen strukturierte Informationen über den Seiteninhalt bereitstellt.
+- [Share of Voice (AI)](https://belalkayumi.com/geo-lexikon/share-of-voice): Prozentualer Anteil der eigenen Markenerwähnungen in KI-generierten Antworten im Vergleich zu Wettbewerbern.
+
+## Erkenntnisse zur KI-Sichtbarkeit
+- [Erkenntnisse zur KI-Sichtbarkeit](https://belalkayumi.com/erkenntnisse-ki-sichtbarkeit): Kuratierte Sammlung von Erkenntnissen zu Generative Engine Optimization (GEO), basierend auf einem laufenden 90-Tage-Selbstexperiment und Recherche. Beobachtungen sind datiert und werden regelmäßig aktualisiert.
+
+## Rechtliches
+- [Impressum](https://belalkayumi.com/impressum)
+- [Datenschutz](https://belalkayumi.com/datenschutz)
