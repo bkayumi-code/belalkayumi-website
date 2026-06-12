@@ -6,8 +6,15 @@
     <description>Forschung, Tools und Praxis-Beobachtungen zu Generative Engine Optimization (GEO) und KI-Sichtbarkeit im DACH-Raum.</description>
     <language>de</language>
     <atom:link href="https://belalkayumi.com/blog/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Thu, 21 May 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 12 Jun 2026 09:00:00 +0000</lastBuildDate>
     <!-- RSS_ITEMS:START — neue <item> hier einfügen, neueste zuerst -->
+    <item>
+      <title>Was ist KI-Suche? Wie ChatGPT, Perplexity und Google den Weg zur Antwort verändern</title>
+      <link>https://belalkayumi.com/blog/ki-suche</link>
+      <guid isPermaLink="true">https://belalkayumi.com/blog/ki-suche</guid>
+      <pubDate>Fri, 12 Jun 2026 09:00:00 +0000</pubDate>
+      <description>KI-Suche einfach erklärt — Funktionsweise, Plattformvergleich, Unterschied zu SEO und wie Marken im DACH-Raum in KI-Antworten sichtbar werden.</description>
+    </item>
     <item>
       <title>GEO vs. SEO: Was ist der Unterschied, was überschneidet sich, und warum reicht SEO allein nicht mehr aus?</title>
       <link>https://belalkayumi.com/blog/geo-vs-seo</link>
