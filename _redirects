@@ -1,11 +1,9 @@
-# Cloudflare Pages redirects
-# https://developers.cloudflare.com/pages/configuration/redirects/
-
+# Cloudflare Pages / Netlify redirects
 # Saubere URLs (ohne .html-Endung)
-/impressum     /impressum.html    200
-/datenschutz   /datenschutz.html  200
+/impressum /impressum.html 200
+/datenschutz /datenschutz.html 200
 
-# Blog-Subpfad → Ghost auf Subdomain
-# Sobald Ghost-Hostname feststeht, hier eintragen:
-/blog          https://blog.belalkayumi.com  301
-/blog/*        https://blog.belalkayumi.com/:splat  301
+# Alte Ghost-Blog-URLs (Subdomain wurde abgeschaltet) -> neue statische Seiten
+/geo-vs-seo /blog/geo-vs-seo/ 301
+/was-ist-generative-engine-optimization-geo /blog/was-ist-generative-engine-optimization-geo/ 301
+/ki-suche /blog/ki-suche/ 301
