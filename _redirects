@@ -7,3 +7,5 @@
 /geo-vs-seo /blog/geo-vs-seo/ 301
 /was-ist-generative-engine-optimization-geo /blog/was-ist-generative-engine-optimization-geo/ 301
 /ki-suche /blog/ki-suche/ 301
+/ai-visibility-check    https://belalkayumi-ai-visibility-check.netlify.app/ai-visibility-check    200
+/ai-visibility-check/*  https://belalkayumi-ai-visibility-check.netlify.app/ai-visibility-check/:splat  200
