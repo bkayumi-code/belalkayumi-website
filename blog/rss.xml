@@ -6,8 +6,15 @@
     <description>Forschung, Tools und Praxis-Beobachtungen zu Generative Engine Optimization (GEO) und KI-Sichtbarkeit im DACH-Raum.</description>
     <language>de</language>
     <atom:link href="https://belalkayumi.com/blog/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Fri, 12 Jun 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 09:00:00 +0000</lastBuildDate>
     <!-- RSS_ITEMS:START — neue <item> hier einfügen, neueste zuerst -->
+    <item>
+      <title>Was ein GEO-Audit wirklich zeigt (und wo er an seine Grenzen kommt)</title>
+      <link>https://belalkayumi.com/blog/geo-audit</link>
+      <guid isPermaLink="true">https://belalkayumi.com/blog/geo-audit</guid>
+      <pubDate>Wed, 01 Jul 2026 09:00:00 +0000</pubDate>
+      <description>GEO-Audit einfach erklärt. Was er prüft, wie er sich vom klassischen SEO-Audit unterscheidet, und eine Checkliste zum Selbstcheck.</description>
+    </item>
     <item>
       <title>Was ist KI-Suche? Wie ChatGPT, Perplexity und Google den Weg zur Antwort verändern</title>
       <link>https://belalkayumi.com/blog/ki-suche</link>

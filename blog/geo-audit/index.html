@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Was ein GEO-Audit wirklich zeigt (und wo er an seine Grenzen kommt) — Belal Kayumi</title>
+  <meta name="description" content="GEO-Audit einfach erklärt. Was er prüft, wie er sich vom klassischen SEO-Audit unterscheidet, und eine Checkliste zum Selbstcheck.">
+  <meta name="author" content="Belal Kayumi">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+  <meta name="keywords" content="GEO-Audit, KI-Sichtbarkeit, Generative Engine Optimization, AI Search, GEO vs SEO, GEO Selbstcheck">
+  <link rel="canonical" href="https://belalkayumi.com/blog/geo-audit">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#1C1917">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Was ein GEO-Audit wirklich zeigt (und wo er an seine Grenzen kommt)">
+  <meta property="og:description" content="GEO-Audit einfach erklärt. Was er prüft, wie er sich vom klassischen SEO-Audit unterscheidet, und eine Checkliste zum Selbstcheck.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://belalkayumi.com/blog/geo-audit">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:site_name" content="Belal Kayumi">
+  <meta property="og:image" content="https://belalkayumi.com/og-blog-geo-audit.jpg">
+  <meta property="article:published_time" content="2026-07-01">
+  <meta property="article:modified_time" content="2026-07-01">
+  <meta property="article:author" content="Belal Kayumi">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Was ein GEO-Audit wirklich zeigt (und wo er an seine Grenzen kommt)">
+  <meta name="twitter:description" content="GEO-Audit einfach erklärt. Was er prüft, wie er sich vom klassischen SEO-Audit unterscheidet, und eine Checkliste zum Selbstcheck.">
+  <meta name="twitter:image" content="https://belalkayumi.com/og-blog-geo-audit.jpg">
+
+  <!-- Fonts (lokal — DSGVO-konform, kein externer Request) -->
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/inter-400.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/fonts/bricolage-grotesque-700.woff2" crossorigin>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        "@id": "https://belalkayumi.com/blog/geo-audit#article",
+        "mainEntityOfPage": { "@type": "WebPage", "@id": "https://belalkayumi.com/blog/geo-audit" },
+        "headline": "Was ein GEO-Audit wirklich zeigt (und wo er an seine Grenzen kommt)",
+        "description": "GEO-Audit einfach erklärt. Was er prüft, wie er sich vom klassischen SEO-Audit unterscheidet, und eine Checkliste zum Selbstcheck.",
+        "image": "https://belalkayumi.com/og-blog-geo-audit.jpg",
+        "inLanguage": "de",
+        "datePublished": "2026-07-01",
+        "dateModified": "2026-07-01",
+        "isPartOf": { "@type": "Blog", "@id": "https://belalkayumi.com/blog#blog" },
+        "author": {
+          "@type": "Person",
+          "@id": "https://belalkayumi.com/#person",
+          "name": "Belal Kayumi",
+          "url": "https://belalkayumi.com",
+          "sameAs": ["https://www.linkedin.com/in/belalkayumi/"]
+        },
+        "publisher": { "@type": "Person", "@id": "https://belalkayumi.com/#person" },
+        "articleBody": "SEO kennst du. Du weißt, was ein Ranking-Check bedeutet, was Backlinks bringen, wie man eine Meta-Description schreibt. Aber seit ChatGPT, Perplexity und die KI-Antworten in der Google-Suche immer öfter die erste Anlaufstelle sind, reicht dieses Wissen allein nicht mehr aus, um gefunden zu werden. Genau da setzt ein GEO-Audit an. Ein GEO-Audit prüft, wie sichtbar eine Marke oder Webseite in generativen KI-Systemen wie ChatGPT, Perplexity, Gemini oder den KI-Antworten von Google ist."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Start", "item": "https://belalkayumi.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://belalkayumi.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Was ein GEO-Audit wirklich zeigt (und wo er an seine Grenzen kommt)", "item": "https://belalkayumi.com/blog/geo-audit" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Ist GEO-Analyse dasselbe wie ein GEO-Audit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In der Praxis meistens ja, viele nutzen beide Begriffe synonym für die Prüfung der KI-Sichtbarkeit. Geoanalyse hat im Deutschen aber auch eine ältere Bedeutung, nämlich die räumliche Analyse von Standorten, wie sie für die Filialplanung im Einzelhandel genutzt wird. Suchst du online nach Geoanalyse, landest du deshalb manchmal bei fachfremden Ergebnissen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie unterscheidet sich ein GEO-Audit von einem klassischen SEO-Audit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ein SEO-Audit bewertet Rankings, technische Basis und Backlinks in der klassischen Suche. Ein GEO-Audit prüft, ob und wie eine Marke in den Antworten von ChatGPT, Perplexity, Gemini und den KI-Ergebnissen von Google auftaucht. Beide bauen auf derselben technischen Grundlage auf."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie lange dauert ein GEO-Audit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ein erster Snapshot lässt sich in wenigen Tagen erstellen, eine vollständige Analyse mit Wettbewerbsvergleich braucht meistens ein bis zwei Wochen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Ersetzt ein GEO-Audit das klassische SEO?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nein. Eine schwache technische SEO-Basis wird durch GEO nicht ausgeglichen. GEO baut auf einer soliden SEO-Grundlage auf."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kann ich einen GEO-Audit selbst machen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Teilweise. Ein einfacher Selbstcheck von robots.txt, Schema Markup und Aktualität zeigt die größten Lücken. Für einen systematischen Vergleich über mehrere KI-Plattformen hinweg braucht es meistens spezialisierte Tools."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ===== FONTS (lokal) ===== */
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/bricolage-grotesque-400.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/bricolage-grotesque-600.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/bricolage-grotesque-700.woff2') format('woff2'); }
+    @font-face { font-family: 'Bricolage Grotesque'; font-style: normal; font-weight: 800; font-display: swap; src: url('/fonts/bricolage-grotesque-800.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 400; font-display: swap; src: url('/fonts/inter-400.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 500; font-display: swap; src: url('/fonts/inter-500.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 600; font-display: swap; src: url('/fonts/inter-600.woff2') format('woff2'); }
+    @font-face { font-family: 'Inter'; font-style: normal; font-weight: 700; font-display: swap; src: url('/fonts/inter-700.woff2') format('woff2'); }
+
+    /* ===== RESET & TOKENS ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #FDFCFA; --bg-warm: #F5F0EB; --bg-card: #FFFFFF;
+      --bg-dark: #1C1917; --bg-dark-card: #292524;
+      --accent: #28D0B3; --accent-hover: #1FA893; --accent-soft: #ECFDF8; --accent-bright: #5DE0C8;
+      --text: #1C1917; --text-secondary: #57534E; --text-muted: #A8A29E; --text-on-dark: #FAFAF9;
+      --border: #E7E5E4; --border-dark: #3D3835;
+      --radius-sm: 8px; --radius-md: 12px; --radius-xl: 16px; --radius-2xl: 20px; --radius-full: 999px;
+      --font-heading: 'Bricolage Grotesque', system-ui, sans-serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --shadow-md: 0 4px 20px rgba(28,25,23,0.06); --shadow-lg: 0 12px 40px rgba(28,25,23,0.08);
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font-body); background: var(--bg); color: var(--text); line-height: 1.7; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: hidden; }
+    ::selection { background: var(--accent); color: var(--bg-dark); }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; border: none; cursor: pointer; background: none; }
+    img { max-width: 100%; display: block; }
+    .container { max-width: 940px; margin: 0 auto; padding: 0 24px; }
+
+    /* ===== NAVIGATION ===== */
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(253,252,250,0.75); backdrop-filter: saturate(140%) blur(16px); -webkit-backdrop-filter: saturate(140%) blur(16px); border-bottom: 1px solid transparent; transition: border-color 0.3s var(--ease), background 0.3s var(--ease); }
+    .nav.is-scrolled { background: rgba(253,252,250,0.9); border-bottom-color: var(--border); }
+    .nav__inner { max-width: 1180px; margin: 0 auto; padding: 16px 24px; display: flex; justify-content: space-between; align-items: center; }
+    .nav__logo { font-family: var(--font-heading); font-size: 18px; font-weight: 700; letter-spacing: -0.01em; }
+    .nav__links { display: flex; align-items: center; gap: 32px; list-style: none; }
+    .nav__links a { font-size: 14px; color: var(--text-secondary); transition: color 0.2s; position: relative; }
+    .nav__links a::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.25s var(--ease); }
+    .nav__links a:hover { color: var(--text); }
+    .nav__links a:hover::after, .nav__links a.is-active::after { width: 100%; }
+    .nav__links a.is-active { color: var(--text); }
+    .nav__cta { font-size: 13px; font-weight: 600; background: var(--bg-dark); color: var(--text-on-dark); padding: 10px 20px; border-radius: var(--radius-md); display: inline-flex; align-items: center; gap: 6px; transition: all 0.2s var(--ease); }
+    .nav__cta:hover { background: #292524; transform: translateY(-1px); }
+    .nav__toggle { display: none; padding: 8px; }
+    .nav__toggle span { display: block; width: 22px; height: 2px; background: var(--text); margin: 5px 0; border-radius: 2px; }
+
+    /* ===== ENTRANCE ===== */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.8s var(--ease), transform 0.8s var(--ease); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; } *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+
+    /* ===== ARTIKEL ===== */
+    .article { padding: 130px 0 40px; }
+    .breadcrumb { font-size: 13px; color: var(--text-muted); margin-bottom: 28px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    .breadcrumb a { color: var(--text-secondary); transition: color 0.2s; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .breadcrumb span { opacity: 0.5; }
+    .article__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font-size: 13px; color: var(--text-muted); font-weight: 500; letter-spacing: 0.02em; margin-bottom: 18px; }
+    .article__category { color: var(--accent); background: var(--accent-soft); padding: 4px 12px; border-radius: var(--radius-full); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
+    .article__meta-dot { opacity: 0.5; }
+    .article__title { font-family: var(--font-heading); font-size: clamp(30px, 5vw, 46px); font-weight: 800; line-height: 1.12; letter-spacing: -0.03em; margin-bottom: 24px; text-wrap: balance; }
+    .article__lead { font-size: clamp(18px, 2vw, 21px); line-height: 1.6; color: var(--text-secondary); margin-bottom: 40px; }
+    .article__lead strong { color: var(--text); font-weight: 600; }
+    /* Beitragsbild — Querformat empfohlen; height:auto zeigt das Bild vollständig (kein Beschnitt). */
+    .article__hero { margin-bottom: 40px; }
+    .article__hero img { width: 100%; height: auto; display: block; border-radius: var(--radius-xl); border: 1px solid var(--border); }
+    .article__hero figcaption { font-size: 12px; color: var(--text-muted); margin-top: 10px; text-align: center; }
+    .article__hero a { color: var(--text-secondary); text-decoration: underline; text-underline-offset: 2px; }
+    .article__hero a:hover { color: var(--accent); }
+
+    /* ===== PROSE ===== */
+    .prose { font-size: 17px; line-height: 1.75; color: var(--text); }
+    .prose > * + * { margin-top: 24px; }
+    .prose h2 { font-family: var(--font-heading); font-size: clamp(24px, 3vw, 30px); font-weight: 700; line-height: 1.2; letter-spacing: -0.02em; margin-top: 56px; }
+    .prose h3 { font-family: var(--font-heading); font-size: clamp(20px, 2.4vw, 23px); font-weight: 700; line-height: 1.25; letter-spacing: -0.015em; margin-top: 40px; }
+    .prose h2 + p, .prose h3 + p { margin-top: 14px; }
+    .prose p { color: var(--text); }
+    .prose a { color: var(--accent-hover); font-weight: 500; text-decoration: underline; text-decoration-color: rgba(40,208,179,0.4); text-underline-offset: 3px; transition: text-decoration-color 0.2s; }
+    .prose a:hover { text-decoration-color: var(--accent); }
+    .prose strong { font-weight: 700; color: var(--text); }
+    .prose ul, .prose ol { padding-left: 24px; }
+    .prose li { margin-top: 10px; }
+    .prose li::marker { color: var(--accent); }
+    .prose blockquote { border-left: 3px solid var(--accent); padding: 4px 0 4px 24px; margin-left: 0; font-size: 19px; line-height: 1.6; color: var(--text-secondary); font-style: italic; }
+    .prose code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.88em; background: var(--bg-warm); padding: 2px 6px; border-radius: var(--radius-sm); }
+    .prose pre { background: var(--bg-dark); color: var(--text-on-dark); padding: 20px 24px; border-radius: var(--radius-md); overflow-x: auto; font-size: 14px; line-height: 1.6; }
+    .prose pre code { background: none; padding: 0; font-size: inherit; color: inherit; }
+    .prose figure { margin: 32px 0; }
+    .prose img { border-radius: var(--radius-md); border: 1px solid var(--border); }
+    .prose figcaption { font-size: 13px; color: var(--text-muted); margin-top: 10px; text-align: center; }
+    .prose hr { border: none; border-top: 1px solid var(--border); margin: 48px 0; }
+    .prose table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    .prose th, .prose td { text-align: left; padding: 12px 14px; border-bottom: 1px solid var(--border); }
+    .prose th { font-weight: 700; background: var(--bg-warm); }
+
+    /* ===== AUTOR-BOX ===== */
+    .author { margin-top: 64px; padding: 28px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-xl); display: flex; gap: 20px; align-items: flex-start; flex-wrap: wrap; }
+    .author__avatar { width: 56px; height: 56px; border-radius: 50%; background: linear-gradient(135deg, var(--bg-warm) 0%, var(--accent-soft) 100%); color: var(--accent); font-family: var(--font-heading); font-weight: 700; font-size: 24px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .author__body { flex: 1; min-width: 240px; }
+    .author__name { font-family: var(--font-heading); font-size: 17px; font-weight: 700; }
+    .author__role { font-size: 13px; color: var(--text-muted); margin-bottom: 10px; }
+    .author__bio { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
+    .author__link { font-size: 14px; font-weight: 600; color: var(--accent); display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; transition: gap 0.25s var(--ease); }
+    .author__link:hover { gap: 10px; }
+
+    /* ===== BACK-LINK ===== */
+    .back-link { margin-top: 40px; }
+    .back-link a { font-size: 14px; font-weight: 600; color: var(--text-secondary); display: inline-flex; align-items: center; gap: 8px; transition: gap 0.25s var(--ease), color 0.2s; }
+    .back-link a:hover { color: var(--accent); gap: 12px; }
+
+    /* ===== NEWSLETTER CTA ===== */
+    .final-cta { background: var(--bg-dark); color: var(--text-on-dark); padding: 90px 0; position: relative; overflow: hidden; margin-top: 80px; }
+    .final-cta__glow { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 700px; height: 700px; background: radial-gradient(circle, rgba(40,208,179,0.12) 0%, transparent 60%); pointer-events: none; }
+    .final-cta__inner { position: relative; z-index: 1; max-width: 720px; text-align: center; margin: 0 auto; padding: 0 24px; }
+    .final-cta__label { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; display: block; }
+    .final-cta__title { font-family: var(--font-heading); font-size: clamp(26px, 3.4vw, 36px); font-weight: 700; line-height: 1.15; letter-spacing: -0.025em; margin-bottom: 16px; color: var(--text-on-dark); }
+    .final-cta__text { font-size: 16px; color: var(--text-muted); line-height: 1.7; margin-bottom: 32px; }
+    .newsletter-form { display: flex; gap: 10px; max-width: 520px; margin: 0 auto; flex-wrap: wrap; }
+    .newsletter-form__input { flex: 1; min-width: 220px; font-family: var(--font-body); font-size: 15px; padding: 15px 20px; background: var(--bg-dark-card); border: 1px solid var(--border-dark); color: var(--text-on-dark); border-radius: var(--radius-md); outline: none; transition: border-color 0.2s, background 0.2s; }
+    .newsletter-form__input::placeholder { color: var(--text-muted); }
+    .newsletter-form__input:focus { border-color: var(--accent); background: #2C2826; }
+    .btn { font-family: var(--font-body); font-weight: 600; font-size: 15px; padding: 15px 28px; border-radius: var(--radius-md); display: inline-flex; align-items: center; gap: 10px; white-space: nowrap; transition: all 0.25s var(--ease); }
+    .btn--dark-primary { background: var(--text-on-dark); color: var(--bg-dark); }
+    .btn--dark-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 32px rgba(250,250,249,0.15); }
+    .btn__arrow { transition: transform 0.25s var(--ease); display: inline-block; }
+    .btn:hover .btn__arrow { transform: translateX(4px); }
+    .newsletter-form__note { font-size: 13px; color: var(--text-muted); margin-top: 14px; }
+
+    /* ===== FOOTER ===== */
+    .footer { background: var(--bg); padding: 64px 0 40px; border-top: 1px solid var(--border); }
+    .footer__inner { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+    .footer__grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 56px; margin-bottom: 48px; }
+    .footer__brand { font-family: var(--font-heading); font-size: 22px; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.01em; }
+    .footer__tagline { font-size: 14px; color: var(--text-secondary); line-height: 1.7; max-width: 380px; }
+    .footer__heading { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: 16px; }
+    .footer__links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer__links a { font-size: 14px; color: var(--text-secondary); transition: color 0.2s; }
+    .footer__links a:hover { color: var(--text); }
+    .footer__bottom { padding-top: 28px; border-top: 1px solid var(--border); font-size: 13px; color: var(--text-muted); }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 880px) { .article { padding: 110px 0 30px; } }
+    @media (max-width: 640px) {
+      .nav__links, .nav__cta { display: none; }
+      .nav__toggle { display: block; }
+      .footer__grid { grid-template-columns: 1fr; gap: 32px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo"><span>belal kayumi</span></a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="/#ki-sichtbarkeit">KI-Sichtbarkeit</a></li>
+          <li><a href="/#themen">Strategie</a></li>
+          <li><a href="/#ueber-mich">Über mich</a></li>
+          <li><a href="/#lernlabor">Praxis</a></li>
+          <li><a href="/blog" class="is-active">Blog</a></li>
+          <li><a href="/#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <a href="https://check.belalkayumi.com" class="nav__cta">AI Visibility Check <span aria-hidden="true">→</span></a>
+      <button class="nav__toggle" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <article class="article">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Brotkrumen">
+          <a href="/">Start</a> <span aria-hidden="true">/</span>
+          <a href="/blog">Blog</a> <span aria-hidden="true">/</span>
+          <span>Was ein GEO-Audit wirklich zeigt (und wo er an seine Grenzen kommt)</span>
+        </nav>
+
+        <div class="article__meta">
+          <span class="article__category">GEO</span>
+          <time datetime="2026-07-01">1. Juli 2026</time>
+          <span class="article__meta-dot" aria-hidden="true">·</span>
+          <span>4 Min. Lesezeit</span>
+        </div>
+
+        <h1 class="article__title">Was ein GEO-Audit wirklich zeigt (und wo er an seine Grenzen kommt)</h1>
+
+        <p class="article__lead">SEO kennst du. Du weißt, was ein Ranking-Check bedeutet, was Backlinks bringen, wie man eine Meta-Description schreibt. Aber seit ChatGPT, Perplexity und die KI-Antworten in der Google-Suche immer öfter die erste Anlaufstelle sind, reicht dieses Wissen allein nicht mehr aus, um gefunden zu werden. Genau da setzt ein GEO-Audit an.</p>
+
+        <div class="prose">
+          <p>Ein GEO-Audit prüft, wie sichtbar eine Marke oder Webseite in generativen KI-Systemen wie ChatGPT, Perplexity, Gemini oder den KI-Antworten von Google ist. Er zeigt, ob deine Inhalte dort überhaupt als Quelle auftauchen, wie du im Vergleich zu deinen Wettbewerbern dargestellt wirst, und woran es liegt, wenn du fehlst.</p>
+
+          <h2>GEO-Audit vs. SEO-Audit</h2>
+          <p>Ich würde vorschlagen, den Unterschied nicht komplizierter zu machen als er ist. Ein SEO-Audit fragt, wie gut deine Seite in der klassischen Google-Suche dasteht. Ein GEO-Audit fragt etwas anderes, nämlich ob und wie eine KI deine Marke überhaupt erwähnt, wenn jemand danach fragt.</p>
+
+          <table>
+            <thead>
+              <tr><th></th><th>SEO-Audit</th><th>GEO-Audit</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Leitfrage</td><td>Wie gut rankt die Seite?</td><td>Wird die Marke in KI-Antworten genannt?</td></tr>
+              <tr><td>Prüfobjekt</td><td>Einzelne URLs, Rankings, Backlinks</td><td>Themenräume, Content-Struktur, Zitierfähigkeit</td></tr>
+              <tr><td>Wichtigste Größe</td><td>Position, Klicks, organischer Traffic</td><td>Erwähnungsrate, Zitat-Anteil, Sentiment</td></tr>
+              <tr><td>Typische Werkzeuge</td><td>Search Console, Ahrefs, Sistrix</td><td>Prompt-Tests in ChatGPT und Perplexity, Tools wie Peec AI</td></tr>
+              <tr><td>Ergebnis</td><td>Rankingliste mit Optimierungspotenzial</td><td>Bericht, wo und wie die Marke in KI-Antworten vorkommt</td></tr>
+            </tbody>
+          </table>
+
+          <p>Was viele dabei übersehen, die beiden schließen sich nicht aus. Eine technisch saubere, gut strukturierte Seite ist für beide die Grundlage. Fehlt diese Basis, fällt auch das GEO-Ergebnis schwächer aus.</p>
+
+          <h2>Was ein GEO-Audit konkret prüft</h2>
+          <p>Drei Bereiche kommen bei mir in jedem Audit vor, egal ob für einen Kunden meiner Agentur oder für mein eigenes Experiment.</p>
+          <p><strong>Zugang.</strong> Kann eine KI deine Seite überhaupt lesen? Klingt banal, wird aber ständig übersehen. Bots wie GPTBot, ClaudeBot, PerplexityBot, Google-Extended oder Bingbot brauchen Zugriff über die robots.txt. Steht dort pauschal alles auf Disallow, bist du für die jeweilige Plattform unsichtbar, unabhängig davon, wie gut dein Content ist.</p>
+          <p><strong>Struktur.</strong> KI-Systeme ziehen einzelne Passagen aus einer Seite, nicht die ganze Seite auf einmal. Eine klare Definition am Anfang, kurze in sich geschlossene Absätze, eine Tabelle für den Vergleich, das macht Inhalte leichter extrahierbar.</p>
+          <p><strong>Autorität.</strong> Quellenangaben, konkrete Zahlen, echte Zitate. Forscher der Princeton University haben das 2024 in einer vielzitierten GEO-Studie untersucht. Inhalte mit Quellenangaben und Statistiken wurden in ihren Tests deutlich häufiger als Antwortgrundlage herangezogen als reine Behauptungen ohne Beleg.</p>
+
+          <h2>Der Fünf-Minuten-Selbstcheck</h2>
+          <p>Bevor du einen vollständigen Audit beauftragst, kannst du dir selbst ein erstes Bild machen. Frag dich einmal ehrlich bei jedem Punkt.</p>
+          <ol>
+            <li>Steht in der robots.txt irgendwo ein pauschales Disallow, das auch GPTBot oder ClaudeBot trifft?</li>
+            <li>Fragst du ChatGPT oder Perplexity mal direkt nach deiner Marke oder deinem Angebot, taucht sie überhaupt auf?</li>
+            <li>Hat deine wichtigste Seite eine klare Definition im ersten Absatz, oder muss man sich erst durchlesen?</li>
+            <li>Gibt es strukturierte Daten wie Schema Markup, oder weiß eine KI nur aus dem Fließtext, worum es geht?</li>
+            <li>Steht irgendwo sichtbar, wann der Inhalt zuletzt aktualisiert wurde?</li>
+          </ol>
+          <p>Bist du dir bei drei oder mehr Punkten unsicher, lohnt sich ein tieferer Blick von außen. Der <a href="/ki-sichtbarkeits-snapshot">Snapshot-Audit</a> ist genau dafür gedacht, ein erster kompakter Check, keine Wochen-Beratung.</p>
+
+          <h2>Häufige Fragen zum GEO-Audit</h2>
+
+          <h3>Ist GEO-Analyse dasselbe wie ein GEO-Audit?</h3>
+          <p>In der Praxis meistens ja, viele nutzen beide Begriffe synonym für die Prüfung der KI-Sichtbarkeit. Eine Sache würde ich dir trotzdem mitgeben. Geoanalyse hat im Deutschen auch eine viel ältere Bedeutung, nämlich die räumliche Analyse von Standorten, wie sie große Beratungen für die Filialplanung im Einzelhandel anbieten. Suchst du online nach Geoanalyse, landest du deshalb manchmal bei Ergebnissen, die mit KI-Sichtbarkeit gar nichts zu tun haben.</p>
+
+          <h3>Wie unterscheidet sich ein GEO-Audit von einem klassischen SEO-Audit?</h3>
+          <p>Ein SEO-Audit bewertet Rankings, technische Basis und Backlinks in der klassischen Suche. Ein GEO-Audit prüft, ob und wie eine Marke in den Antworten von ChatGPT, Perplexity, Gemini und den KI-Ergebnissen von Google auftaucht. Beide bauen auf derselben technischen Grundlage auf.</p>
+
+          <h3>Wie lange dauert ein GEO-Audit?</h3>
+          <p>Kommt auf die Tiefe an. Ein erster Snapshot lässt sich in wenigen Tagen erstellen, eine vollständige Analyse mit Wettbewerbsvergleich braucht meistens ein bis zwei Wochen.</p>
+
+          <h3>Ersetzt ein GEO-Audit das klassische SEO?</h3>
+          <p>Nein. Eine schwache technische SEO-Basis wird durch GEO nicht ausgeglichen, eher andersrum, GEO baut auf einer soliden SEO-Grundlage auf.</p>
+
+          <h3>Kann ich einen GEO-Audit selbst machen?</h3>
+          <p>Teilweise. Der Fünf-Minuten-Check oben zeigt dir die größten Lücken. Für einen echten Vergleich über mehrere KI-Plattformen hinweg braucht es meistens spezialisierte Tools oder jemanden, der das systematisch macht.</p>
+
+          <p>Ich beschäftige mich gerade in einem öffentlichen Selbstexperiment genau damit, wie sich die eigene KI-Sichtbarkeit Schritt für Schritt verbessern lässt. Willst du wissen, wo deine Marke aktuell steht, schau dir gerne den <a href="/ki-sichtbarkeits-snapshot">Snapshot-Audit</a> an, oder schreib mir direkt.</p>
+
+          <p><em>Stand 1. Juli 2026.</em></p>
+        </div>
+
+        <!-- Autor -->
+        <div class="author">
+          <div class="author__avatar" aria-hidden="true">B</div>
+          <div class="author__body">
+            <div class="author__name">Belal Kayumi</div>
+            <div class="author__role">GEO &amp; KI-Sichtbarkeit · RLVNT.AI · Dozent Leibniz FH Hannover</div>
+            <p class="author__bio">Senior Manager für Marketing und Sales bei einer KI-Agentur für Unternehmenskommunikation. Unterrichtet nebenbei Digital Marketing an der Leibniz-Fachhochschule Hannover und dokumentiert sein eigenes GEO-Experiment öffentlich auf LinkedIn.</p>
+            <a class="author__link" href="https://www.linkedin.com/in/belalkayumi/" target="_blank" rel="noopener">Auf LinkedIn vernetzen <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="back-link">
+          <a href="/blog"><span aria-hidden="true">←</span> Alle Beiträge</a>
+        </div>
+      </div>
+    </article>
+    <!-- NEXT STEP CTA -->
+    <section class="final-cta" style="background: var(--accent); margin-top: 80px;">
+      <div class="final-cta__glow" aria-hidden="true"></div>
+      <div class="final-cta__inner">
+        <span class="final-cta__label" style="color: var(--bg-dark);">Nächster Schritt</span>
+        <h2 class="final-cta__title" style="color: var(--bg-dark);">Wie sichtbar ist dein Unternehmen in der KI-Suche?</h2>
+        <p class="final-cta__text" style="color: rgba(28,25,23,0.75);">In 2 Minuten siehst du, ob ChatGPT, Perplexity und Google AI Overviews dein Unternehmen überhaupt kennen — mit Score und konkreten Handlungsempfehlungen.</p>
+        <a href="https://check.belalkayumi.com" class="btn" style="background: var(--bg-dark); color: var(--text-on-dark);">
+          Kostenloser AI Visibility Check
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">belal kayumi</div>
+          <p class="footer__tagline">Eine der ersten deutschsprachigen Stimmen zu Generative Engine Optimization (GEO) und KI-Sichtbarkeit. Damit dein Unternehmen genannt wird, wenn die KI antwortet.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <ul class="footer__links">
+            <li><a href="/#ki-sichtbarkeit">KI-Sichtbarkeit</a></li>
+            <li><a href="/#themen">Strategie</a></li>
+            <li><a href="/#ueber-mich">Über mich</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/#faq">FAQ</a></li>
+            <li><a href="/#newsletter">Newsletter</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Kontakt</div>
+          <ul class="footer__links">
+            <li><a href="https://www.linkedin.com/in/belalkayumi/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:hello@belalkayumi.com">E-Mail</a></li>
+            <li><a href="https://rlvnt.ai" target="_blank" rel="noopener">RLVNT.AI</a></li>
+            <li><a href="/impressum">Impressum</a></li>
+            <li><a href="/datenschutz">Datenschutz</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">© 2026 Belal Kayumi. Alle Rechte vorbehalten.</div>
+    </div>
+  </footer>
+
+  <script>
+    // Newsletter läuft über Brevo (Cloudflare Worker) — siehe Newsletter-Handler unten.
+
+    // Scroll Reveal
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); revealObserver.unobserve(entry.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Nav Scroll State
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) nav.classList.add('is-scrolled'); else nav.classList.remove('is-scrolled');
+    }, { passive: true });
+
+    // Smooth Anchor Scroll (in-page only)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#' || !targetId) return;
+        const target = document.querySelector(targetId);
+        if (!target) return;
+        e.preventDefault();
+        const offset = target.getBoundingClientRect().top + window.scrollY - nav.offsetHeight - 12;
+        window.scrollTo({ top: offset, behavior: 'smooth' });
+      });
+    });
+
+    // Mobile Nav Toggle
+    const navToggle = document.querySelector('.nav__toggle');
+    const navLinks = document.querySelector('.nav__links');
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        const visible = navLinks.style.display === 'flex';
+        navLinks.style.display = visible ? 'none' : 'flex';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = '100%'; navLinks.style.left = '0'; navLinks.style.right = '0';
+        navLinks.style.padding = '20px 24px'; navLinks.style.background = 'var(--bg)';
+        navLinks.style.borderBottom = '1px solid var(--border)'; navLinks.style.gap = '16px';
+      });
+    }
+
+    // Newsletter → Ghost Members API (Pattern wie auf Homepage/Blog-Index)
+    const newsletterForm = document.getElementById('newsletter-form');
+    const newsletterNote = document.getElementById('newsletter-note');
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const button = newsletterForm.querySelector('button');
+        const btnText = newsletterForm.querySelector('.newsletter-form__btn-text');
+        const arrow = newsletterForm.querySelector('.btn__arrow');
+        const input = newsletterForm.querySelector('input[type=email]');
+        const email = input.value.trim();
+        if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { input.focus(); return; }
+        button.disabled = true; btnText.textContent = 'Wird gesendet…'; if (arrow) arrow.style.display = 'none';
+        try {
+          const response = await fetch('https://brevo-doi.b-kayumi.workers.dev/', {
+            method: 'POST', headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, company: '' })
+          });
+          if (response.ok) {
+            btnText.textContent = 'Bestätigung gesendet ✓'; input.value = ''; input.disabled = true;
+            if (newsletterNote) newsletterNote.innerHTML = '<strong>Letzter Schritt:</strong> Bitte klick den Bestätigungs-Link in deiner E-Mail.';
+          } else {
+            btnText.textContent = 'Fehler — bitte erneut versuchen'; button.disabled = false; if (arrow) arrow.style.display = '';
+            setTimeout(() => { btnText.textContent = 'Newsletter abonnieren'; }, 4000);
+          }
+        } catch (error) {
+          btnText.textContent = 'Verbindungsfehler'; button.disabled = false; if (arrow) arrow.style.display = '';
+          setTimeout(() => { btnText.textContent = 'Newsletter abonnieren'; }, 4000);
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
