@@ -8,6 +8,7 @@
 - [Blog](https://belalkayumi.com/blog): Artikel und Analysen zu GEO, KI-Suche und Content-Strategie.
 
 ## Blog-Beiträge
+- [Wer ist für KI-Sichtbarkeit zuständig? Die falsche erste Frage](https://belalkayumi.com/blog/ki-sichtbarkeit-zustaendigkeit): KI-Sichtbarkeit gehört keinem einzelnen Team allein — warum Umsetzung vor dem perfekten Org-Chart kommen sollte.
 - [Was ein GEO-Audit wirklich zeigt (und wo er an seine Grenzen kommt)](https://belalkayumi.com/blog/geo-audit): GEO-Audit einfach erklärt — was er prüft, wie er sich vom klassischen SEO-Audit unterscheidet, und eine Checkliste zum Selbstcheck.
 - [Was ist KI-Suche? ChatGPT, Perplexity & Google erklärt](https://belalkayumi.com/blog/ki-suche): Definition, Funktionsweise und Plattformvergleich von KI-Suchsystemen — sowie was das für die Sichtbarkeit von Marken im DACH-Raum bedeutet.
 - [GEO vs. SEO: Was ist der Unterschied?](https://belalkayumi.com/blog/geo-vs-seo): Unterschiede und Überschneidungen von Generative Engine Optimization und klassischem SEO — und warum SEO allein nicht mehr reicht, wenn ChatGPT, Perplexity und Google AI Overviews antworten.

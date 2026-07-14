@@ -6,8 +6,15 @@
     <description>Forschung, Tools und Praxis-Beobachtungen zu Generative Engine Optimization (GEO) und KI-Sichtbarkeit im DACH-Raum.</description>
     <language>de</language>
     <atom:link href="https://belalkayumi.com/blog/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Wed, 01 Jul 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 09:00:00 +0000</lastBuildDate>
     <!-- RSS_ITEMS:START — neue <item> hier einfügen, neueste zuerst -->
+    <item>
+      <title>Wer ist für KI-Sichtbarkeit zuständig? Die falsche erste Frage</title>
+      <link>https://belalkayumi.com/blog/ki-sichtbarkeit-zustaendigkeit</link>
+      <guid isPermaLink="true">https://belalkayumi.com/blog/ki-sichtbarkeit-zustaendigkeit</guid>
+      <pubDate>Tue, 14 Jul 2026 09:00:00 +0000</pubDate>
+      <description>In größeren Unternehmen blockiert die Zuständigkeitsfrage die KI-Sichtbarkeit. Warum du erst jemanden brauchst, der treibt, und danach die saubere Struktur.</description>
+    </item>
     <item>
       <title>Was ein GEO-Audit wirklich zeigt (und wo er an seine Grenzen kommt)</title>
       <link>https://belalkayumi.com/blog/geo-audit</link>
