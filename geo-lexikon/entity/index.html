@@ -35,7 +35,7 @@
     "@type": "DefinedTerm",
     "name": "Entity",
     "description": "Ein eindeutig identifizierbares Objekt im Wissensnetz eines Sprachmodells — eine Person, Organisation, ein Ort oder ein Konzept.",
-    "dateModified": "2026-06-01",
+    "dateModified": "2026-07-27",
     "inDefinedTermSet": {
       "@type": "DefinedTermSet",
       "name": "GEO-Lexikon von Belal Kayumi",
@@ -47,6 +47,30 @@
   </script>
   <link rel="stylesheet" href="/geo-lexikon/entry.css">
   <link rel="stylesheet" href="/css/cookie-consent.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie erkenne ich, ob meine Marke als klare Entity gilt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ein einfacher Test: Frage ChatGPT oder Perplexity, wer oder was deine Marke ist. Wird sie korrekt und ohne Verwechslung mit anderen Unternehmen oder Personen beschrieben, ist die Entity klar etabliert. Kommen falsche Fakten, eine Verwechslung oder gar keine Antwort zurück, fehlt die Konsistenz über deine Quellen hinweg."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Reicht ein Wikipedia-Eintrag, um als Entity zu gelten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ein Wikipedia-Eintrag hilft erheblich, ist aber kein Muss. Entscheidend ist Konsistenz über mehrere unabhängige Quellen hinweg, etwa die eigene Website, LinkedIn, Branchenverzeichnisse und Presseartikel. Ein einzelner, gepflegter Wikipedia-Eintrag beschleunigt diesen Prozess aber deutlich, weil KI-Systeme ihn als besonders vertrauenswürdige Quelle einstufen."
+        }
+      }
+    ]
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -98,7 +122,7 @@
       <div class="container entry__container">
         <div class="entry__header">
           <span class="badge badge--tech">Technischer Begriff</span>
-          <p class="entry__updated">Zuletzt aktualisiert: 01. Juni 2026</p>
+          <p class="entry__updated">Zuletzt aktualisiert: 27. Juli 2026</p>
           <h1 class="entry__title">Entity</h1>
           <p class="entry__englisch">dt. Entität / KI-Wissensobjekt</p>
           <p class="entry__kurz">Ein eindeutig identifizierbares Objekt im Wissensnetz eines Sprachmodells — eine Person, Organisation, ein Ort oder ein Konzept.</p>
@@ -111,6 +135,7 @@
               Definition
             </div>
             <p>Eine Entity ist ein eindeutig identifizierbares Objekt im Wissensnetz eines Sprachmodells — eine Person, eine Organisation, ein Ort, ein Konzept. LLMs denken nicht in Keywords, sondern in Entities und deren Beziehungen zueinander. Eine Marke, die als klare Entity erkannt wird, hat eine höhere Wahrscheinlichkeit, in KI-Antworten genannt und korrekt beschrieben zu werden.</p>
+            <p>Sprachmodelle bauen dabei intern ein Netz aus Entities und ihren Beziehungen zueinander auf, ähnlich einem Wissensgraphen. Eine Marke wird als eigenständige Entity erkannt, wenn sie über mehrere Quellen hinweg konsistent mit denselben Fakten beschrieben wird, etwa Name, Branche, Standort oder Gründungsjahr. Schema-Markup wie Organization- oder Person-Daten im HTML einer Website hilft KI-Systemen dabei, diese Zuordnung eindeutig vorzunehmen — besonders wenn mehrere Unternehmen einen ähnlichen Namen tragen. Wichtig dabei: KI-Crawler können in der Regel kein JavaScript ausführen, strukturierte Daten müssen deshalb direkt im HTML-Quelltext stehen und dürfen nicht erst dynamisch nachgeladen werden.</p>
           </section>
 
           <hr class="entry__divider">
@@ -135,6 +160,27 @@
             <div class="entry__praxis">
               <p>Bei GEO-Erstanalysen für Kunden ist die erste Frage immer: Wie beschreibt das Unternehmen sich selbst auf der Website, auf LinkedIn, in Pressemitteilungen? Stimmen die drei überein? Meistens nicht. Das ist Schritt 1 beim Entity-Aufbau.</p>
             </div>
+          </section>
+
+          <hr class="entry__divider">
+
+          <section class="entry__section">
+            <div class="entry__section-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 18 0 9 9 0 1 0-18 0"/><path d="M12 8v4l3 2"/></svg>
+              Warum das für DACH-Marken zählt
+            </div>
+            <p>Gerade im deutschsprachigen Mittelstand tragen viele Unternehmen Namen, die auch als Nachname oder Ortsbezeichnung existieren, oder sie treten unter leicht unterschiedlichen Schreibweisen auf, mit und ohne Rechtsform, mit und ohne Umlaut-Schreibweise. Das erschwert es Sprachmodellen, die Marke als eindeutige Entity zu erkennen. Eine konsistente Selbstbeschreibung über Website, Wikipedia, LinkedIn und Presseartikel hinweg ist deshalb für DACH-Unternehmen kein kosmetisches Detail, sondern eine Voraussetzung dafür, überhaupt korrekt zitiert zu werden.</p>
+          </section>
+
+          <hr class="entry__divider">
+
+          <section class="entry__section">
+            <div class="entry__section-label">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 9a3 3 0 1 1 4 2.83V14"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+              Häufige Frage
+            </div>
+            <p><strong>Wie erkenne ich, ob meine Marke als klare Entity gilt?</strong> Ein einfacher Test: Frage ChatGPT oder Perplexity, wer oder was deine Marke ist. Wird sie korrekt und ohne Verwechslung mit anderen Unternehmen oder Personen beschrieben, ist die Entity klar etabliert. Kommen falsche Fakten, eine Verwechslung oder gar keine Antwort zurück, fehlt die Konsistenz über deine Quellen hinweg.</p>
+            <p><strong>Reicht ein Wikipedia-Eintrag, um als Entity zu gelten?</strong> Ein Wikipedia-Eintrag hilft erheblich, ist aber kein Muss. Entscheidend ist Konsistenz über mehrere unabhängige Quellen hinweg, etwa die eigene Website, LinkedIn, Branchenverzeichnisse und Presseartikel. Ein einzelner, gepflegter Wikipedia-Eintrag beschleunigt diesen Prozess aber deutlich, weil KI-Systeme ihn als besonders vertrauenswürdige Quelle einstufen.</p>
           </section>
         </div>
 
