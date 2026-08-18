@@ -1,17 +1,59 @@
-# Cloudflare Pages / Netlify redirects
-# Saubere URLs (ohne .html-Endung)
+# Netlify redirects — belalkayumi.com
+# Wichtig: Netlify wertet von oben nach unten aus.
+# Die erste passende Regel gewinnt. Reihenfolge nicht vertauschen.
+
+# ============================================================
+# 1) ALTE BLOG-SUBDOMAIN (blog.belalkayumi.com)
+#    MUSS ganz oben stehen. Sonst greifen die pfadbasierten
+#    Regeln weiter unten auch fuer die Subdomain und leiten
+#    innerhalb von blog.* um statt auf die Hauptdomain.
+#    Das "!" erzwingt die Regel gegen vorhandene Dateien.
+# ============================================================
+
+# Artikel, die es auf der neuen Seite gibt
+https://blog.belalkayumi.com/geo-vs-seo/  https://belalkayumi.com/blog/geo-vs-seo/  301!
+https://blog.belalkayumi.com/geo-vs-seo  https://belalkayumi.com/blog/geo-vs-seo/  301!
+https://blog.belalkayumi.com/was-ist-generative-engine-optimization-geo/  https://belalkayumi.com/blog/was-ist-generative-engine-optimization-geo/  301!
+https://blog.belalkayumi.com/was-ist-generative-engine-optimization-geo  https://belalkayumi.com/blog/was-ist-generative-engine-optimization-geo/  301!
+https://blog.belalkayumi.com/ki-suche/  https://belalkayumi.com/blog/ki-suche/  301!
+https://blog.belalkayumi.com/ki-suche  https://belalkayumi.com/blog/ki-suche/  301!
+
+# Startseite der alten Subdomain
+https://blog.belalkayumi.com/  https://belalkayumi.com/  301!
+
+# Alles Uebrige auf der Subdomain (alte Instagram-Artikel,
+# Tag-Seiten, Autorenseiten): endgueltig weg.
+# 410 sagt Google "geloescht, nicht suchen" und raeumt den
+# Index schneller ab als ein Redirect ins Nichts.
+https://blog.belalkayumi.com/*  /  410!
+
+# ============================================================
+# 2) Saubere URLs (ohne .html-Endung)
+# ============================================================
 /impressum /impressum.html 200
 /datenschutz /datenschutz.html 200
 
-# Alte Ghost-Blog-URLs (Subdomain wurde abgeschaltet) -> neue statische Seiten
+# ============================================================
+# 3) AI Visibility Check (liegt auf Vercel)
+#    KORRIGIERT 18.08.2026 — altes Ziel lieferte 404
+# ============================================================
+/ai-visibility-check    https://check.belalkayumi.com/    200
+/ai-visibility-check/*  https://check.belalkayumi.com/:splat  200
+
+# ============================================================
+# 4) Alte Ghost-Blog-URLs auf der Hauptdomain
+# ============================================================
 /geo-vs-seo /blog/geo-vs-seo/ 301
+/geo-vs-seo/ /blog/geo-vs-seo/ 301
 /was-ist-generative-engine-optimization-geo /blog/was-ist-generative-engine-optimization-geo/ 301
+/was-ist-generative-engine-optimization-geo/ /blog/was-ist-generative-engine-optimization-geo/ 301
 /ki-suche /blog/ki-suche/ 301
-/ai-visibility-check    https://ai-visibility-check-belal-kayumi.vercel.app/ai-visibility-check    200
-/ai-visibility-check/*  https://ai-visibility-check-belal-kayumi.vercel.app/ai-visibility-check/:splat  200
+/ki-suche/ /blog/ki-suche/ 301
 
-
-# Alte URL-Struktur (Maerz-Juni 2026) -> neue Struktur | GSC-Cleanup 14.07.2026
+# ============================================================
+# 5) Alte URL-Struktur (Maerz-Juni 2026)
+#    GSC-Cleanup 14.07.2026
+# ============================================================
 /ueber-mich /about/ 301
 /ueber-mich/ /about/ 301
 /kontakt / 301
