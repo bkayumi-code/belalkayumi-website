@@ -4,13 +4,12 @@
 
 # ============================================================
 # 1) ALTE BLOG-SUBDOMAIN (blog.belalkayumi.com)
-#    MUSS ganz oben stehen. Sonst greifen die pfadbasierten
-#    Regeln weiter unten auch fuer die Subdomain und leiten
-#    innerhalb von blog.* um statt auf die Hauptdomain.
-#    Das "!" erzwingt die Regel gegen vorhandene Dateien.
+#    MUSS ganz oben stehen.
+#    KORRIGIERT 18.08.2026 — 410-Wildcard griff nicht,
+#    dadurch war die komplette Site unter blog.* erreichbar.
 # ============================================================
 
-# Artikel, die es auf der neuen Seite gibt
+# 1a) Artikel, die es auf der neuen Seite gibt
 https://blog.belalkayumi.com/geo-vs-seo/  https://belalkayumi.com/blog/geo-vs-seo/  301!
 https://blog.belalkayumi.com/geo-vs-seo  https://belalkayumi.com/blog/geo-vs-seo/  301!
 https://blog.belalkayumi.com/was-ist-generative-engine-optimization-geo/  https://belalkayumi.com/blog/was-ist-generative-engine-optimization-geo/  301!
@@ -18,14 +17,22 @@ https://blog.belalkayumi.com/was-ist-generative-engine-optimization-geo  https:/
 https://blog.belalkayumi.com/ki-suche/  https://belalkayumi.com/blog/ki-suche/  301!
 https://blog.belalkayumi.com/ki-suche  https://belalkayumi.com/blog/ki-suche/  301!
 
-# Startseite der alten Subdomain
+# 1b) Alte Ghost-Artikel ohne Nachfolger: endgueltig weg.
+#     Ohne "!", weil hier keine Datei existiert, mit der die
+#     Regel konkurrieren muesste.
+https://blog.belalkayumi.com/instagram-bio-vorlage/  /  410
+https://blog.belalkayumi.com/instagram-fuer-anfaenger/  /  410
+https://blog.belalkayumi.com/neue-instagram-formate/  /  410
+https://blog.belalkayumi.com/tag/*  /  410
+https://blog.belalkayumi.com/author/*  /  410
+
+# 1c) Startseite der alten Subdomain
 https://blog.belalkayumi.com/  https://belalkayumi.com/  301!
 
-# Alles Uebrige auf der Subdomain (alte Instagram-Artikel,
-# Tag-Seiten, Autorenseiten): endgueltig weg.
-# 410 sagt Google "geloescht, nicht suchen" und raeumt den
-# Index schneller ab als ein Redirect ins Nichts.
-https://blog.belalkayumi.com/*  /  410!
+# 1d) SICHERHEITSNETZ: alles Uebrige auf die Hauptdomain.
+#     Verhindert, dass die Website unter zwei Hostnamen
+#     ausgeliefert wird. 301! ist erprobt und greift zuverlaessig.
+https://blog.belalkayumi.com/*  https://belalkayumi.com/:splat  301!
 
 # ============================================================
 # 2) Saubere URLs (ohne .html-Endung)
@@ -35,7 +42,6 @@ https://blog.belalkayumi.com/*  /  410!
 
 # ============================================================
 # 3) AI Visibility Check (liegt auf Vercel)
-#    KORRIGIERT 18.08.2026 — altes Ziel lieferte 404
 # ============================================================
 /ai-visibility-check    https://check.belalkayumi.com/    200
 /ai-visibility-check/*  https://check.belalkayumi.com/:splat  200
