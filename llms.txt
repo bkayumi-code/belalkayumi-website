@@ -8,6 +8,7 @@
 - [Blog](https://belalkayumi.com/blog): Artikel und Analysen zu GEO, KI-Suche und Content-Strategie.
 
 ## Blog-Beiträge
+- [ChatGPT Ads in Deutschland: Was du buchen kannst — und warum das nicht GEO ersetzt](https://belalkayumi.com/blog/chatgpt-ads/): Stand zu ChatGPT Ads in DACH seit dem Self-Service-Start am 31. August 2026 — was buchbar ist, wie Context-Hint-Targeting funktioniert, und warum Ads GEO nicht ersetzen.
 - [Wer ist für KI-Sichtbarkeit zuständig? Die falsche erste Frage](https://belalkayumi.com/blog/ki-sichtbarkeit-zustaendigkeit/): KI-Sichtbarkeit gehört keinem einzelnen Team allein — warum Umsetzung vor dem perfekten Org-Chart kommen sollte.
 - [Was ein GEO-Audit wirklich zeigt (und wo er an seine Grenzen kommt)](https://belalkayumi.com/blog/geo-audit/): GEO-Audit einfach erklärt — was er prüft, wie er sich vom klassischen SEO-Audit unterscheidet, und eine Checkliste zum Selbstcheck.
 - [Was ist KI-Suche? ChatGPT, Perplexity & Google erklärt](https://belalkayumi.com/blog/ki-suche/): Definition, Funktionsweise und Plattformvergleich von KI-Suchsystemen — sowie was das für die Sichtbarkeit von Marken im DACH-Raum bedeutet.

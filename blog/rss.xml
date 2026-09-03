@@ -6,8 +6,15 @@
     <description>Forschung, Tools und Praxis-Beobachtungen zu Generative Engine Optimization (GEO) und KI-Sichtbarkeit im DACH-Raum.</description>
     <language>de</language>
     <atom:link href="https://belalkayumi.com/blog/rss.xml" rel="self" type="application/rss+xml" />
-    <lastBuildDate>Tue, 14 Jul 2026 09:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 09:00:00 +0000</lastBuildDate>
     <!-- RSS_ITEMS:START — neue <item> hier einfügen, neueste zuerst -->
+    <item>
+      <title>ChatGPT Ads in Deutschland: Was du buchen kannst — und warum das nicht GEO ersetzt</title>
+      <link>https://belalkayumi.com/blog/chatgpt-ads</link>
+      <guid isPermaLink="true">https://belalkayumi.com/blog/chatgpt-ads</guid>
+      <pubDate>Thu, 03 Sep 2026 09:00:00 +0000</pubDate>
+      <description>ChatGPT Ads sind seit Ende August 2026 in Deutschland buchbar. Was der Kanal kann, wie Targeting per Context Hints funktioniert und warum er GEO nicht ersetzt.</description>
+    </item>
     <item>
       <title>Wer ist für KI-Sichtbarkeit zuständig? Die falsche erste Frage</title>
       <link>https://belalkayumi.com/blog/ki-sichtbarkeit-zustaendigkeit</link>
